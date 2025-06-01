@@ -2,8 +2,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from "../../public/assets/logo/logo.png";
-import Image from "next/image";
 import NavigationMenu from "./navigationMenu";
 import DesktopNavigationMenu from "./desktopNavigationMenu";
 import { AnimatePresence, motion } from "framer-motion";
