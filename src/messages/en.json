@@ -1,0 +1,43 @@
+{
+  "homePage": {
+    "registrationBtn": "Contact Us To Learn More",
+    "topHeaderTitle": "Every journey to parenthood is unique. We’re here for yours",
+    "register": "Register Now",
+    "title": "Where Hope Meets Life",
+    "description": "Helping dreams of parenthood come true through compassion, trust, and care.",
+    "about": "A Path to Parenthood, Guided with Heart",
+    "aboutText": "At [Your Company Name], we believe every family’s story is unique. Whether you’re seeking a surrogate or an egg donor, we’re here to walk beside you — offering guidance, support, and care every step of the way. With a deep respect for every journey, we connect intended parents, surrogates, and donors with kindness, integrity, and understanding.",
+    "whyChooseUs": "Why Families Trust [Your Company Name]",
+    "whyChooseUsList": [
+      "Personalized support throughout your entire journey",
+      "Thoroughly screened, compassionate surrogates and donors",
+      "Transparent process with no hidden steps",
+      "Experienced team committed to your peace of mind",
+      "Respect, dignity, and care for all involved"
+    ],
+    "missionTitle": "Our Mission",
+    "missionText": "Our mission is simple: to build families with heart. We are dedicated to making the process of surrogacy and egg donation as smooth and meaningful as possible, creating an environment where trust, empathy, and dreams flourish.",
+    "readyToBeginTitle": "Ready to Begin?",
+    "readyToBeginText": "Whether you’re hoping to grow your family or offer the gift of life to someone else, we are here to guide you. Your journey starts with a single step — and we’ll be with you every step of the way.",
+    "getStartedButton": "Get Started",
+    "learnMoreButton": "Learn More",
+    "main_title": "Supporting Families Through Surrogacy",
+    "main_text": "Our mission is to bring hope and happiness to families who dream of becoming parents. Through compassion, transparency, and trust, we guide intended parents and surrogates every step of the way. You are not alone — let’s walk this journey together."
+  },
+  "footer": {
+    "copyright": "© 2023 My Application. All rights reserved."
+  },
+  "pages": {
+    "home": "home",
+    "about": "about",
+    "contact": "contact",
+    "prices": "prices",
+    "services": "services"
+  },
+  "registerPage": {
+    "register-title": "The Power of Surrogacy & Egg Donation",
+    "register-paragraph": " If you're looking for an emotional and meaningful path to  parenthood, surrogacy and egg donation can be life-changing steps. This beautiful journey allows dreams to come true, bringing the joy of new life into the world.",
+    "register-secParagraph": " Fill out the form and let&apos;s turn your dream into reality! 💙",
+    "register-button": "Register Now"
+  }
+}

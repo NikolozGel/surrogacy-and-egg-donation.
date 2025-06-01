@@ -1,0 +1,55 @@
+import { MongoClient } from "mongodb";
+import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
+
+export async function POST(request: NextRequest) {
+  try {
+    const formData = await request.json();
+    console.log("Received data:", formData);
+    // MongoDB კავშირი
+    const client = new MongoClient(process.env.MONGODB_URI as string);
+    await client.connect();
+    const database = client.db("suroggacy-and-egg-donation");
+    const collection = database.collection("surrogacy");
+
+    await collection.insertOne(formData);
+
+    // Nodemailer კონფიგურაცია
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "nikolozgelenidze9@gmail.com",
+        pass: process.env.PASSWORD,
+      },
+    });
+
+    // ელფოსტის გაგზავნა ჩემთვის
+    const mailForMe = {
+      from: `${formData.name}<${formData.email}>`,
+      to: "nikolozgelenidze9@gmail.com",
+      subject: `Mail from ${formData.email}`,
+      text: `${formData.message}`,
+    };
+    await transporter.sendMail(mailForMe);
+
+    // ელფოსტის გაგზავნა მომხმარებლისთვის
+    const mailForUser = {
+      from: `nikolozgelenidze9@gmail.com`,
+      to: `${formData.email}`,
+      subject: `Thank you for your Response`,
+      text: `Hi ${formData.fullName}, thanks for your Response. we will contact you as soon as possible.`,
+    };
+    await transporter.sendMail(mailForUser);
+
+    return NextResponse.json(
+      { message: "Data saved and email sent successfully!" },
+      { status: 201 }
+    );
+  } catch (error) {
+    console.error("Error processing request:", error);
+    return NextResponse.json(
+      { message: "Something went wrong!" },
+      { status: 500 }
+    );
+  }
+}
