@@ -19,7 +19,6 @@ li {
 
 .custom-carousel .slick-prev,
 .custom-carousel .slick-next {
-  background-color: #008080;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -38,18 +37,12 @@ li {
 .ant-carousel .slick-prev::after {
   margin-left: 22px;
   margin-top: 18px;
-
   width: 18px;
   height: 18px;
 }
 
 .ant-carousel .slick-next {
   opacity: 10;
-}
-
-.ant-carousel .slick-next:hover,
-.slick-prev:hover {
-  opacity: 0.5 !important;
 }
 
 .ant-carousel .slick-prev {

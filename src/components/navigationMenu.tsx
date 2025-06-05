@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-// import LocalSwitcher from "./localSwitcher";
+import LocalSwitcher from "./localSwitcher";
 
 export default function DavigationMenu() {
   const locale = useLocale();
   const t = useTranslations("pages");
   return (
-    <ul className=" pl-6 block lg:hidden">
+    <ul className="pl-6 block lg:hidden">
       <li className="relative">
         <Link
           href={`/${locale}/`}
@@ -47,9 +47,9 @@ export default function DavigationMenu() {
           {t("services")}
         </Link>
       </li>
-      {/* <li className="relative">
+      <li className="relative z-50">
         <LocalSwitcher />
-      </li> */}
+      </li>
     </ul>
   );
 }

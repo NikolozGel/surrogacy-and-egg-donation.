@@ -6,6 +6,7 @@ export async function POST(request: NextRequest) {
   try {
     const formData = await request.json();
     console.log("Received data:", formData);
+    console.log("email", formData.email);
     // MongoDB კავშირი
     const client = new MongoClient(process.env.MONGODB_URI as string);
     await client.connect();
@@ -27,8 +28,8 @@ export async function POST(request: NextRequest) {
     const mailForMe = {
       from: `${formData.name}<${formData.email}>`,
       to: "nikolozgelenidze9@gmail.com",
-      subject: `Mail from ${formData.email}`,
-      text: `${formData.message}`,
+      subject: `Email from ${formData.email}`,
+      text: `${formData.text}`,
     };
     await transporter.sendMail(mailForMe);
 
@@ -37,7 +38,7 @@ export async function POST(request: NextRequest) {
       from: `nikolozgelenidze9@gmail.com`,
       to: `${formData.email}`,
       subject: `Thank you for your Response`,
-      text: `Hi ${formData.fullName}, thanks for your Response. we will contact you as soon as possible.`,
+      text: `Hi ${formData.name}, thanks for your Response. we will contact you as soon as possible.`,
     };
     await transporter.sendMail(mailForUser);
 

@@ -21,15 +21,19 @@
     "readyToBeginText": "Whether you’re hoping to grow your family or offer the gift of life to someone else, we are here to guide you. Your journey starts with a single step — and we’ll be with you every step of the way.",
     "getStartedButton": "Get Started",
     "learnMoreButton": "Learn More",
-    "main_title": "Supporting Families Through Surrogacy",
-    "main_text": "Our mission is to bring hope and happiness to families who dream of becoming parents. Through compassion, transparency, and trust, we guide intended parents and surrogates every step of the way. You are not alone — let’s walk this journey together."
+    "main_title": "Surrogacy & Egg Donation Agency Helping Families Grow",
+    "main_text": "Compassionate support and expert guidance for intended parents, surrogates, and egg donors. Your journey to parenthood starts here.",
+    "becomeSurrogateBtn": "Become a Surrogate",
+    "becomeDonorBtn": "Become an Egg Donor",
+    "becomeSurrogateText": "As a surrogate, you have the power to give the greatest gift helping someone create a family. We guide and support you throughout the entire process, every step of the way.",
+    "becomeEggDonorText": " Egg donation is a meaningful way to help others experience the joy of parenthood. If you're ready to make a lasting difference, we’re here to ensure your journey is safe, respectful, and rewarding."
   },
   "footer": {
     "copyright": "© 2023 My Application. All rights reserved."
   },
   "pages": {
     "home": "home",
-    "about": "about",
+    "about": "about us",
     "contact": "contact",
     "prices": "prices",
     "services": "services"
