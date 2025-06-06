@@ -82,8 +82,8 @@ export default function HomePage() {
           </Modal>
 
           <section className="w-full lg:w-[650px]">
-            <div className="bg-[#17134C] py-12 flex flex-col justify-center items-center h-full text-center ">
-              <h3 className="text-white text-3xl font-bold">
+            <div className="bg-[#17134C] py-12 flex flex-col justify-center items-center h-full text-center">
+              <h3 className="text-white text-3xl font-bold px-2">
                 {t("becomeDonorBtn")}
               </h3>
               <p className="mt-6 text-white px-5 lg:px-20 text-lg">
@@ -106,6 +106,51 @@ export default function HomePage() {
           >
             <ModalRegistrationForm />
           </Modal>
+        </div>
+      </div>
+      <div className="container mx-auto px-5 md:px-12 mt-8 mb-30">
+        <div className="text-gray-600">
+          <h3 className="text-[2.1rem]">Surrogacy and Egg Donation</h3>
+          <p className="text-[1.2rem] mt-2">
+            The path to parenthood isn’t always simple — but with today’s
+            reproductive technologies, new possibilities have opened for those
+            who face infertility or other challenges. Surrogacy and reproductive
+            donation offer real hope to individuals and couples for whom natural
+            conception isn’t an option. These methods make it possible to build
+            the family you&apos;ve dreamed of, with the support of dedicated
+            professionals every step of the way. At our center in Georgia, we
+            care deeply about helping people on this personal journey. We guide
+            intended parents through each stage of the process with clarity,
+            confidentiality, and compassion — offering trusted solutions for
+            those who long to experience the joy of having a child.
+          </p>
+        </div>
+
+        <ul>
+          <li>sadsa</li>
+        </ul>
+        <div className="mt-10 text-gray-600">
+          <p>Third-party reproductive options may be the right choice for:</p>
+          <ul className="list-disc list-inside mt-4">
+            <li>
+              Individuals or couples facing infertility and unable to conceive
+              with their own eggs or sperm
+            </li>
+            <li>Women who are medically unable to carry a pregnancy</li>
+            <li>
+              Women who are beyond natural reproductive age or going through
+              menopause
+            </li>
+            <li>Single parents who wish to raise a child on their own</li>
+            <li>
+              LGBTQ+ individuals or couples who need reproductive support to
+              grow their family
+            </li>
+            <li>
+              Those who carry a high risk of passing on genetic conditions and
+              seek a safer alternative
+            </li>
+          </ul>
         </div>
       </div>
     </main>
