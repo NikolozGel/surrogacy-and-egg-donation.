@@ -5,8 +5,8 @@ import nodemailer from "nodemailer";
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.json();
-    console.log("Received data:", formData);
-    console.log("email", formData.email);
+    // console.log("Received data:", formData);
+    // console.log("email", formData.email);
     // MongoDB კავშირი
     const client = new MongoClient(process.env.MONGODB_URI as string);
     await client.connect();

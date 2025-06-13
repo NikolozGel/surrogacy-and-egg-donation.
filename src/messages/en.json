@@ -26,7 +26,10 @@
     "becomeSurrogateBtn": "Become a Surrogate",
     "becomeDonorBtn": "Become an Egg Donor",
     "becomeSurrogateText": "As a surrogate, you have the power to give the greatest gift helping someone create a family. We guide and support you throughout the entire process, every step of the way.",
-    "becomeEggDonorText": " Egg donation is a meaningful way to help others experience the joy of parenthood. If you're ready to make a lasting difference, we’re here to ensure your journey is safe, respectful, and rewarding."
+    "becomeEggDonorText": " Egg donation is a meaningful way to help others experience the joy of parenthood. If you're ready to make a lasting difference, we’re here to ensure your journey is safe, respectful, and rewarding.",
+    "becomeParent": "Become a Parent",
+    "becomeParentBtn": "Become a Parent",
+    "becomeParentText": "Being a parent is one of life’s most significant experiences. We offer support and resources to make your journey to parenthood as smooth and enjoyable as possible."
   },
   "footer": {
     "copyright": "© 2023 My Application. All rights reserved."

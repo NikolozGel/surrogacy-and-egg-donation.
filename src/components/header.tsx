@@ -8,7 +8,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleHamburgerMenuChange = () => {
@@ -22,7 +21,9 @@ export default function Header() {
       <nav className="relative">
         <div className="flex items-center justify-between lg:justify-evenly px-5">
           <Link href="/">
-            <p className="text-4xl font-semibold text-teal-900">LifeLine</p>
+            <p className="text-4xl font-semibold text-teal-900">
+              Persona Surrogacy
+            </p>
           </Link>
           <DesktopNavigationMenu />
           <RxHamburgerMenu

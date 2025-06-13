@@ -16,7 +16,7 @@ export default function TopHeader() {
   // };
 
   return (
-    <div className="bg-[#a3a7c4] lg:flex px-16 items-center justify-evenly hidden">
+    <div className="bg-[#23a39f] lg:flex px-16 items-center justify-evenly hidden">
       <h2 className="text-lg">{t("topHeaderTitle")}</h2>
       <div className="flex items-center gap-5">
         <button className="h-11 w-48 rounded-full text-lg flex items-center justify-center gap-0.5 text-black cursor-pointer">
