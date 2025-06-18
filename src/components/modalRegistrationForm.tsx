@@ -138,7 +138,7 @@ export default function ModalRegistrationForm() {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="p-2 bg-blue-500 text-lg text-white rounded-full w-[200px] hover:bg-blue-600 transition"
+              className="p-2 bg-blue-500 text-lg text-white rounded-full w-[200px] hover:bg-blue-500 transition cursor-pointer"
             >
               Send Message
             </button>
