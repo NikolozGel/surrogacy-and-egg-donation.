@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { Modal } from "antd";
 import ModalRegistrationForm from "./modalRegistrationForm";
 
@@ -11,7 +11,7 @@ export default function SurrogacyAndEggDonationOptions() {
     setIsModalOpen(!isModalOpen);
   };
 
-  const t = useTranslations("homePage");
+  // const t = useTranslations("homePage");
 
   return (
     <div className="px-5 md:px-20 mt-8 mb-30 lg:absolute lg:bottom-0 lg:left-16 lg:w-full lg:max-w-7xl lg:mx-auto ">

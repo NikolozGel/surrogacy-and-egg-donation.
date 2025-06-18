@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import Image from "next/image";
 import ReproductiveImage from "../../public/assets/images/reproductive-system.png";
 
 export default function SurrogacyIntroSection() {
-  const t = useTranslations("introSection");
+  // const t = useTranslations("introSection");
 
   return (
     <section className="mt-20 px-4 sm:px-6 lg:px-8">
