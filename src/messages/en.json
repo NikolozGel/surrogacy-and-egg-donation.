@@ -32,8 +32,27 @@
     "becomeParentText": "Being a parent is one of life’s most significant experiences. We offer support and resources to make your journey to parenthood as smooth and enjoyable as possible."
   },
   "introSection": {
-    "title": "18 Years of Excellence in Surrogacy and Egg Donation",
-    "description": "We provide fully coordinated surrogacy and egg donation programs, built on 18 years of exceptional experience. Our highly specialized clinic delivers top-tier medical care — combining compassion, expertise, and unwavering support at every step of your journey."
+    "title": "What we",
+    "subtitle": "offer",
+    "description": " We’re dedicated to providing ethical, compassionate, and transparent care every step of the way. From your first consultation to welcoming your child, you’ll be supported, informed, and guided by trusted professionals—ensuring a smooth, safe, and successful journey.",
+    "secTitle": "Reproducitve Surgery",
+    "description2": " Sometimes, fertility challenges can be addressed with minor surgical intervention. Our experienced surgical team specializes in minimally invasive procedures to treat conditions like fibroids, endometriosis, or blocked tubes—enhancing your chance of a successful pregnancy.",
+    "thirdTitle": "Ferility Preservation",
+    "thirdDescription": "Whether due to medical treatment or personal timing, we offer egg, sperm, and embryo freezing options so you can plan your future with confidence, safety, and flexibility.",
+    "fourthTitle": "Surrogacy Services",
+    "fourthDescription": "We support a wide range of intended parents. Our ethical surrogacy process is supported by experienced legal and medical professionals, ensuring safety, clarity, and care at every step."
+  },
+  "surrogacyOptions": {
+    "title": "Empowering Your path to Parenthood",
+    "description": " At fertility Options, we belive in the power of choice. The journey to parenthood is deeply personal and unique for every individual or couple, which is why we are committed to offering a range of tailored solutions. we ephasize the importance of providing diverse and flexible pathways to help you achive your dream of having a family.",
+    "button": " Book an appointment"
+  },
+  "ourMission": {
+    "title": "What Makes",
+    "subtitle": "Us Special",
+    "description": " We're committed to the highest standards of ethics and transparency, so you always fell informed and confident every step of the way",
+    "h3Title": "Comprehensive Support",
+    "h3Description": "From IVF to fertility surgery and third-part reproductive, our wide range of services ensures we've got every aspect of your fertility needs covered. Your path to parenthood starts here. Contact Fertility Options today. and let's make your dream of becoming a parent a reality"
   },
   "footer": {
     "copyright": "© 2023 My Application. All rights reserved."

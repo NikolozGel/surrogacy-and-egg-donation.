@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
 
+import { useState } from "react";
 // ✅ Schema validation with Yup
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -35,7 +36,7 @@ export default function ModalRegistrationForm() {
     mode: "onChange", // enables real-time validation
   });
 
-  const [successMessage, setSuccessMessage] = React.useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const onSubmit = async (data: FormData) => {
     // 🛡️ Extra check to block submission if invalid
