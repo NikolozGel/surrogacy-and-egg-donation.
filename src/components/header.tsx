@@ -19,11 +19,9 @@ export default function Header() {
   return (
     <header className="mt-2">
       <nav className="relative">
-        <div className="flex items-center justify-between lg:justify-evenly px-5">
+        <div className="flex justify-between lg:justify-evenly px-5">
           <Link href="/">
-            <p className="text-4xl font-semibold text-teal-900">
-              Persona Surrogacy
-            </p>
+            <p className="text-4xl font-semibold text-teal-900">Surrogacy</p>
           </Link>
           <DesktopNavigationMenu />
           <RxHamburgerMenu

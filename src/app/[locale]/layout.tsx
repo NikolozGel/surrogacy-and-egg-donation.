@@ -7,7 +7,7 @@ import "../[locale]/globals.css";
 
 import { Raleway } from "next/font/google";
 import { Metadata } from "next";
-import TopHeader from "@/components/topHeader";
+// import TopHeader from "@/components/topHeader";
 
 const dmSans = Raleway({
   subsets: ["latin"],
@@ -38,7 +38,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${dmSans.className}`}>
         <NextIntlClientProvider>
-          <TopHeader />
+          {/* <TopHeader /> */}
           <Header />
           {children}
           <Footer />

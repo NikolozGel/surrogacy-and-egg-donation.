@@ -52,14 +52,17 @@
     "subtitle": "Us Special",
     "description": " We're committed to the highest standards of ethics and transparency, so you always fell informed and confident every step of the way",
     "h3Title": "Comprehensive Support",
-    "h3Description": "From IVF to fertility surgery and third-part reproductive, our wide range of services ensures we've got every aspect of your fertility needs covered. Your path to parenthood starts here. Contact Fertility Options today. and let's make your dream of becoming a parent a reality"
+    "h3Description": "From IVF to fertility surgery and third-part reproductive, our wide range of services ensures we've got every aspect of your fertility needs covered. Your path to parenthood starts here. Contact Fertility Options today. and let's make your dream of becoming a parent a reality",
+    "h4Description": "We're all about the largest and greatest in fertility science. leveraging advanced technology to boost your chances of success.",
+    "h5Description": "Every fertility journey is unique story. and our approach is just as personalized. We create treatment plans that are as one of a kind as you are",
+    "h6Description": "We're committed to the highest standards of ethics and transparency, so you always fell informed and confident every step of the way "
   },
   "footer": {
     "copyright": "© 2023 My Application. All rights reserved."
   },
   "pages": {
     "home": "home",
-    "about": "about us",
+    "about": "about",
     "contact": "contact",
     "prices": "prices",
     "services": "services"

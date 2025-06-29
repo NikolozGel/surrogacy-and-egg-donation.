@@ -7,7 +7,6 @@ export default function SurrogacyIntroSection() {
   return (
     <section className="mt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Only visible on md and up */}
         <div className="hidden md:block mb-12">
           <h3 className="text-3xl font-bold text-center mb-5">
             {t("title")} <span className="text-amber-400">{t("subtitle")}</span>
@@ -18,7 +17,6 @@ export default function SurrogacyIntroSection() {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {/* Mobile version of the header card */}
           <div className="md:hidden bg-white px-6 py-5 rounded-lg shadow-md hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer hover:text-white active:text-white">
             <h3 className="text-2xl font-bold text-center mb-4">
               {t("title")}{" "}
@@ -27,7 +25,6 @@ export default function SurrogacyIntroSection() {
             <p className="text-center">{t("description")}</p>
           </div>
 
-          {/* Card 1 */}
           <div className="bg-white py-5 rounded-lg hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer shadow-md hover:text-white active:text-white">
             <Image
               className="rounded-full mb-4 ml-5"
@@ -40,7 +37,6 @@ export default function SurrogacyIntroSection() {
             <p className="px-5">{t("description2")}</p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white py-5 rounded-lg hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer shadow-md hover:text-white active:text-white">
             <Image
               className="rounded-full mb-4 ml-5"
@@ -53,7 +49,6 @@ export default function SurrogacyIntroSection() {
             <p className="px-5">{t("thirdDescription")}</p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white py-5 rounded-lg hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer shadow-md hover:text-white active:text-white">
             <Image
               className="rounded-full mb-4 ml-5"

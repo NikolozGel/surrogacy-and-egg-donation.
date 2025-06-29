@@ -14,7 +14,7 @@ export default function SurrogacyAndEggDonationOptions() {
   const t = useTranslations("surrogacyOptions");
 
   return (
-    <div className="px-5 md:px-20 mt-8 mb-30 lg:absolute lg:bottom-0 lg:left-16 lg:w-full lg:max-w-7xl lg:mx-auto ">
+    <div className="px-5 md:px-20 mt-8 lg:mt-0 mb-30 lg:absolute lg:bottom-0 lg:left-20 lg:max-w-7xl lg:mx-auto ">
       <div className="flex flex-col gap-5">
         {/* <div className="flex">
           <p className="bg-[#A5D761] p-1 rounded-lg">Power of the choice</p>
