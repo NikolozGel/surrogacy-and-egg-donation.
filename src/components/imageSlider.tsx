@@ -26,8 +26,10 @@ export default function ImageSlider({
       const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
       const data = await response.json();
       setImages(data);
-    } catch (e) {
-      setErrorMsg(e.message);
+    } catch (e: unknown) {
+      if (e instanceof Error) {
+        setErrorMsg(e.message);
+      }
     } finally {
       setLoading(false);
     }
