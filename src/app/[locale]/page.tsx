@@ -4,6 +4,7 @@ import SurrogacyAndEggDonationOptions from "@/components/surrogacyAndEggDonation
 import OurMissionSection from "@/components/ourMissionSection";
 import ImageSlider from "@/components/imageSlider";
 import AccordionFaq from "@/components/accordionFaq";
+import ContactCallToAction from "@/components/contactCallToAction";
 
 export default function HomePage() {
   return (
@@ -17,7 +18,10 @@ export default function HomePage() {
         <OurMissionSection />
       </div>
       <ImageSlider />
-      <AccordionFaq />
+      <div className="px-5">
+        <AccordionFaq />
+      </div>
+      <ContactCallToAction />
     </main>
   );
 }
