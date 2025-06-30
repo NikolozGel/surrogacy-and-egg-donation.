@@ -1,26 +1,17 @@
 import Image from "next/image";
 import DoneImage from "../../public/assets/images/check-button.png";
 import { useTranslations } from "next-intl";
-import surrogacy from "../../public/assets/pregnant-photos/pregnant.jpg";
+import surrogacy from "../../public/assets/doctors/pregnant.jpg";
 
 export default function OurMissionSection() {
   const t = useTranslations("ourMission");
 
   return (
     <section className="my-16 px-4 sm:px-6 lg:px-24 xl:px-32">
-      <div className="mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-          {t("title")} <span className="text-green-600">{t("subtitle")}</span>
-        </h2>
-        <p className="text-gray-700 mt-4 text-base sm:text-lg max-w-3xl">
-          {t("description")}
-        </p>
-      </div>
-
       {/* Main Content Area */}
-      <div className="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-10">
+      <div className="flex justify-center gap-40">
         {/* Text Section */}
-        <div className="flex flex-col gap-8 flex-1">
+        <div className="flex flex-col gap-8">
           {[
             t("h3Description"),
             t("h4Description"),
@@ -48,9 +39,9 @@ export default function OurMissionSection() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full max-w-xl xl:max-w-[500px] hidden xl:block">
+        <div className="w-full max-w-xl xl:max-w-[500px] hidden xl:block h-full">
           <Image
-            className="rounded-xl w-full h-auto object-cover"
+            className="rounded-xl w-full h-full object-cover"
             src={surrogacy}
             alt="Surrogacy"
           />

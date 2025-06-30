@@ -2,6 +2,9 @@ import Slider from "@/components/Slider";
 import SurrogacyIntroSection from "@/components/surrogacyIntroSection";
 import SurrogacyAndEggDonationOptions from "@/components/surrogacyAndEggDonationOptions";
 import OurMissionSection from "@/components/ourMissionSection";
+import ImageSlider from "@/components/imageSlider";
+import AccordionFaq from "@/components/accordionFaq";
+
 export default function HomePage() {
   return (
     <main>
@@ -9,10 +12,12 @@ export default function HomePage() {
       <div className="relative">
         <SurrogacyAndEggDonationOptions />
       </div>
-      <div className="px-8">
+      <div className="lg:px-8">
         <SurrogacyIntroSection />
         <OurMissionSection />
       </div>
+      <ImageSlider />
+      <AccordionFaq />
     </main>
   );
 }
