@@ -17,11 +17,13 @@ export default function Header() {
   };
 
   return (
-    <header className="mt-2">
+    <header className="mt-2 mb-3">
       <nav className="relative">
         <div className="flex justify-between lg:justify-evenly px-5">
           <Link href="/">
-            <p className="text-4xl font-semibold text-teal-900">Surrogacy</p>
+            <p className="text-4xl font-semibold text-teal-900">
+              IVF Fertility
+            </p>
           </Link>
           <DesktopNavigationMenu />
           <RxHamburgerMenu

@@ -11,7 +11,7 @@ export async function GET() {
   const photos: Photo[] = [
     {
       id: 1,
-      url: "/assets/doctors/doctor.jpg",
+      url: "/assets/clinic/zizi.JPG",
       title: "Zizi",
       subtitle: "Doctor",
       description:

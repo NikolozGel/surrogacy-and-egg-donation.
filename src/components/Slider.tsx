@@ -20,7 +20,7 @@ export default function Slider() {
   return (
     <>
       <Carousel
-        className="custom-carousel bg-[#F1F5F9] mt-3"
+        className="custom-carousel bg-[#F1F5F9]"
         arrows
         speed={1500}
         touchMove

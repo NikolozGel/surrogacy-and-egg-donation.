@@ -85,7 +85,7 @@ export default function ImageSlider({
 
           <div className="flex flex-col md:flex-row md:items-stretch md:gap-12 w-full">
             {/* Image */}
-            <div className="relative w-full md:w-1/2 rounded-2xl">
+            <div className="relative w-full md:w-1/4 rounded-2xl">
               {/* ვაძლევთ კონკრეტულ სიმაღლეს */}
               <div className="relative h-[400px]">
                 {images.map((image, index) => (

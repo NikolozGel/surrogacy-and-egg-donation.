@@ -1,7 +1,7 @@
 import Image from "next/image";
 import DoneImage from "../../public/assets/images/check-button.png";
 import { useTranslations } from "next-intl";
-import surrogacy from "../../public/assets/doctors/pregnant.jpg";
+// import surrogacy from "../../public/assets/doctors/pregnant.jpg";
 
 export default function OurMissionSection() {
   const t = useTranslations("ourMission");
@@ -9,7 +9,7 @@ export default function OurMissionSection() {
   return (
     <section className="my-16 px-4 sm:px-6 lg:px-24 xl:px-32">
       {/* Main Content Area */}
-      <div className="flex justify-center gap-40">
+      <div className="flex justify-center gap-18">
         {/* Text Section */}
         <div className="flex flex-col gap-8">
           {[
@@ -41,8 +41,10 @@ export default function OurMissionSection() {
         {/* Image Section */}
         <div className="w-full max-w-xl xl:max-w-[500px] hidden xl:block h-full">
           <Image
-            className="rounded-xl w-full h-full object-cover"
-            src={surrogacy}
+            className="rounded-xl object-cover"
+            src={"/assets/clinic/clinic-2.JPG"}
+            width={400}
+            height={300}
             alt="Surrogacy"
           />
         </div>

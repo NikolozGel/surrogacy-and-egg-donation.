@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FaArrowDown } from "react-icons/fa6";
 import Image from "next/image";
 import faqImage from "../../public/assets/logo/FAQ.png";
+import { Modal } from "antd";
+import ModalRegistrationForm from "./modalRegistrationForm";
 
 interface IData {
   id: string;
@@ -34,12 +36,16 @@ const data: IData[] = [
 
 export default function AccordionFaq() {
   const [selected, setSelected] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   function handleSingleSelection(getCurrentId: string) {
     console.log(getCurrentId);
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
-  console.log(selected);
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div className="flex flex-col">
       {/* Main content */}
@@ -104,12 +110,24 @@ export default function AccordionFaq() {
               You have different questions? Contact us or check FAQ Page
             </h3>
             <div className="flex gap-4 mt-6 flex-col sm:flex-row mb-4">
-              <button className="bg-amber-300 text-black font-semibold py-2 px-6 rounded-lg w-full sm:w-auto">
+              <button
+                className="bg-amber-300 text-black font-semibold py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer hover:bg-amber-500"
+                onClick={toggleModal}
+              >
                 Contact Us
               </button>
-              <button className="border border-amber-300 text-white py-2 px-6 rounded-lg w-full sm:w-auto">
+              <button className="border border-amber-300 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer">
                 FAQ
               </button>
+              <Modal
+                footer={false}
+                width={700}
+                open={isModalOpen}
+                onOk={() => setIsModalOpen(false)}
+                onCancel={() => setIsModalOpen(false)}
+              >
+                <ModalRegistrationForm />
+              </Modal>
             </div>
           </div>
         </div>
