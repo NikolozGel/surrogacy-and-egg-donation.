@@ -58,36 +58,35 @@ export default function ImageSlider({
     <div className="container mx-auto px-4 mb-10 max-w-screen-xl">
       <div className="flex flex-col items-center mt-24">
         {/* Header */}
-        <section className="mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold">
+        <section className="mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
             We know what{" "}
             <span className="text-[#FCCB40]">You&apos;re going through</span>
           </h2>
-          <p className="mt-4 text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
             At Fertility Options, our achievements are reflected in the lives we
             help transform...
           </p>
         </section>
 
         {/* Slider Container */}
-        <div className="relative w-full flex flex-col items-center mt-16">
+        <div className="relative w-full flex flex-col items-center mt-12 sm:mt-16">
           {/* Arrows */}
-          <div className="absolute top-[-70px] right-4 flex gap-4 md:top-[-50px] md:right-6">
+          <div className="absolute -top-16 right-4 sm:right-6 flex gap-4 z-20">
             <BsArrowLeftCircleFill
               onClick={handlePrevious}
-              className="text-4xl text-white drop-shadow cursor-pointer hover:text-[#A5D761]"
+              className="text-3xl sm:text-4xl text-white drop-shadow cursor-pointer hover:text-[#A5D761]"
             />
             <BsArrowRightCircleFill
               onClick={handleNext}
-              className="text-4xl text-white drop-shadow cursor-pointer hover:text-[#A5D761]"
+              className="text-3xl sm:text-4xl text-white drop-shadow cursor-pointer hover:text-[#A5D761]"
             />
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-stretch md:gap-12 w-full">
+          <div className="flex flex-col md:flex-row md:items-stretch gap-6 lg:items-center md:gap-10 w-full">
             {/* Image */}
-            <div className="relative w-full md:w-1/4 rounded-2xl">
-              {/* ვაძლევთ კონკრეტულ სიმაღლეს */}
-              <div className="relative h-[400px]">
+            <div className="relative w-full md:w-1/2 lg:w-1/3 rounded-2xl overflow-hidden">
+              <div className="relative h-[300px] sm:h-[350px] md:h-[400px]">
                 {images.map((image, index) => (
                   <div
                     key={index}
@@ -109,24 +108,24 @@ export default function ImageSlider({
             </div>
 
             {/* Text Block */}
-            <div className="w-full md:w-1/2 xl:w-[65%] bg-[#323232] text-white p-6 rounded-2xl mt-6 md:mt-0 flex flex-col justify-around">
+            <div className="h-[400px] md:w-1/2 lg:w-2/3 bg-[#323232] text-white p-6 rounded-2xl">
               {images[currentSlide] && (
-                <>
-                  <div className="flex justify-between items-center">
-                    <h3 className="font-semibold text-lg md:text-3xl">
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:justify-between gap-2">
+                    <h3 className="font-semibold text-xl sm:text-2xl md:text-3xl">
                       {images[currentSlide].title}
                     </h3>
-                    <p className="text-[#A6D761] font-bold md:text-xl">
+                    <p className="text-[#A6D761] font-bold text-base sm:text-lg md:text-xl">
                       Success Story
                     </p>
                   </div>
-                  <h4 className="mt-1 text-gray-300 ">
+                  <h4 className="mt-2 text-gray-300 text-sm sm:text-base">
                     {images[currentSlide].subtitle}
                   </h4>
-                  <p className="mt-3 text-gray-300">
+                  <p className="mt-3 text-gray-300 text-sm sm:text-base">
                     {images[currentSlide].description}
                   </p>
-                </>
+                </div>
               )}
             </div>
           </div>
@@ -137,7 +136,7 @@ export default function ImageSlider({
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-3 w-3 rounded-full transition cursor-pointer ${
+                className={`h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full transition cursor-pointer ${
                   currentSlide === index ? "bg-[#A6D761]" : "bg-gray-300"
                 }`}
               />
