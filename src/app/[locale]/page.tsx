@@ -2,7 +2,7 @@ import Slider from "@/components/Slider";
 import SurrogacyIntroSection from "@/components/surrogacyIntroSection";
 import SurrogacyAndEggDonationOptions from "@/components/surrogacyAndEggDonationOptions";
 import OurMissionSection from "@/components/ourMissionSection";
-import ImageSlider from "@/components/imageSlider";
+import ImageSlider from "@/components/ImageSlider/imageSlider";
 import AccordionFaq from "@/components/accordionFaq";
 import ContactCallToAction from "@/components/contactCallToAction";
 
