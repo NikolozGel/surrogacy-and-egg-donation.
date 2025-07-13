@@ -6,6 +6,21 @@ import ImageSlider from "@/components/ImageSlider/imageSlider";
 import AccordionFaq from "@/components/accordionFaq";
 import ContactCallToAction from "@/components/contactCallToAction";
 
+const images = [
+  {
+    url: "/assets/clinic/zizi.JPG",
+    title: "title",
+    subtitle: "subtitle",
+    description: "description",
+  },
+  {
+    url: "/assets/doctors/beautiful-doctor.jpg",
+    title: "title-2",
+    subtitle: "subtitle-2",
+    description: "description-2",
+  },
+];
+
 export default function HomePage() {
   return (
     <main>
@@ -17,7 +32,7 @@ export default function HomePage() {
         <SurrogacyIntroSection />
         <OurMissionSection />
       </div>
-      <ImageSlider />
+      <ImageSlider images={images} />
       <div className="px-5">
         <AccordionFaq />
       </div>

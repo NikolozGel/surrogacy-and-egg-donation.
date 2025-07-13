@@ -22,6 +22,7 @@ export default function SliderImage({
               src={image.url}
               alt={`Slide ${index + 1}`}
               fill
+              sizes="50"
               quality={90}
               priority={index === 0}
               className="object-cover"

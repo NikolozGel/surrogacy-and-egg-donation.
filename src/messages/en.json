@@ -47,6 +47,7 @@
     "description": " At fertility Options, we belive in the power of choice. The journey to parenthood is deeply personal and unique for every individual or couple, which is why we are committed to offering a range of tailored solutions. we ephasize the importance of providing diverse and flexible pathways to help you achive your dream of having a family.",
     "button": " Book an appointment"
   },
+
   "ourMission": {
     "title": "What Makes",
     "subtitle": "Us Special",
@@ -56,6 +57,23 @@
     "h4Description": "We're all about the largest and greatest in fertility science. leveraging advanced technology to boost your chances of success.",
     "h5Description": "Every fertility journey is unique story. and our approach is just as personalized. We create treatment plans that are as one of a kind as you are",
     "h6Description": "We're committed to the highest standards of ethics and transparency, so you always fell informed and confident every step of the way "
+  },
+  "aboutPage": {
+    "heading_line1": "We truly understand",
+    "heading_highlight": "what you're going through",
+    "paragraph": "At Fertility Options, every success story is a testament to the hope, courage, and new beginnings we help create.",
+    "successStory": "Success Story",
+    "title": "Zeinab",
+    "subtitle": "Doctor",
+    "description": "Surrogacy is a unique and heartfelt path to building families for those who are unable to have children on their own. This process involves a compassionate and responsible woman who is willing to help individuals and couples realize their dream of parenthood. Surrogacy is not only a medical achievement but also a deeply human act that brings hope and joy to new families. Dr. Zeinab offers a reliable and safe environment, complete support, and professional care to ensure that every surrogacy journey ends successfully and with love.",
+    "title-2": "Laliko",
+    "subtitle-2": "Reproductologist",
+    "description-2": "Reproductive medicine is a remarkable field of healthcare dedicated to fulfilling the dream of starting a family. It’s deeply intertwined with emotions, responsibility, and the highest level of professionalism. Being a specialist in this area requires not only scientific expertise but also a profound understanding of people. Laliko wholeheartedly supports couples navigating the challenging journey to parenthood. Her mission goes beyond medical care—it includes psychological support and emotional guidance. Every consultation is filled with genuine care, warmth, and hope, giving each patient the chance to begin their unique story of happiness."
+  },
+  "sliderImage": {
+    "title": "Eleanor Pena",
+    "subtitle": "Proffesional Athlete",
+    "description": "Growing Families is a Charity which  works with intended parents, Heterosexual and Singles around the globe to educate and support their familty building journey with donors and surrogates. Formetly Families"
   },
   "footer": {
     "copyright": "© 2023 My Application. All rights reserved."

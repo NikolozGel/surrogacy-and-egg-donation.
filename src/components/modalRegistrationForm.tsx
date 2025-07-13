@@ -43,7 +43,7 @@ export default function ModalRegistrationForm() {
     if (!isValid) return;
 
     try {
-      await axios.post("/api/saveData", data);
+      await axios.post("/api/monday", data);
       setSuccessMessage("Thank you! We will contact you as soon as possible.");
       reset();
     } catch (err) {

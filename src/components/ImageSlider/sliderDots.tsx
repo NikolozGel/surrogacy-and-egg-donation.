@@ -14,7 +14,7 @@ export default function SliderDots({
           key={index}
           onClick={() => setCurrent(index)}
           className={`h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full transition cursor-pointer ${
-            current === index ? "bg-[#A6D761]" : "bg-gray-300"
+            current === index ? "bg-[#008E8A]" : "bg-gray-300"
           }`}
         />
       ))}
