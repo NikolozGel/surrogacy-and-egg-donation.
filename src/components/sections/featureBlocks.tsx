@@ -1,8 +1,12 @@
 // import reproductiveSystem2 from "../../../public/assets/images/reproductive-system-2.png";
+import { useTranslations } from "next-intl";
 import reproductiveSystem from "../../../public/assets/images/reproductive-system.png";
-
+import reproductiveSystem2 from "../../../public/assets/images/reproductive-surgery-2.png";
+import reproductiveSystem3 from "../../../public/assets/images/reproductive-surgery-3.png";
+import reproductiveSystem4 from "../../../public/assets/images/reproductive-surgery-4.png";
 import Image from "next/image";
 export default function FeatureBlocks() {
+  const t = useTranslations("aboutPage");
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
       <div className="px-5 flex flex-col items-center gap-4 bg-[#bce1f062] rounded-2xl text-center">
@@ -11,65 +15,53 @@ export default function FeatureBlocks() {
           width={50}
           height={50}
           alt="Holistic Fertility Care"
-          className="rounded-lg mt-7"
+          className="rounded-full mt-7"
         />
-        <h3 className="font-semibold text-lg">Holistic Fertility Care</h3>
+        <h3 className="font-semibold text-lg">{t("feature1Title")}</h3>
         <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-5">
-          We see you as a whole person, not just a patient. Our holistic
-          approach integrates physical, emotional, and psychological support,
-          creating a nurturing environment where you always feel heard and cared
-          for.
+          {t("feature1Description")}
         </p>
       </div>
 
       <div className="px-5 flex flex-col items-center gap-4 bg-[#bce1f062] rounded-2xl text-center">
         <Image
-          src={reproductiveSystem}
+          src={reproductiveSystem2}
           width={50}
           height={50}
           alt="Supportive Space"
           className="rounded-full mt-7"
         />
-        <h3 className="font-semibold text-lg">Supportive Space</h3>
+        <h3 className="font-semibold text-lg">{t("feature2Title")}</h3>
         <p className="text-sm sm:text-base text-gray-700 mb-5 md:text-lg">
-          We know fertility challenges can be tough on the heart and mind.
-          That&apos;s why our team provides not only medical care but also
-          emotional support, offering counseling services and support groups to
-          help you through the range of emotional aspects of your journey.
+          {t("feature2Description")}
         </p>
       </div>
 
       <div className="px-5 flex flex-col items-center gap-4 bg-[#bce1f062] rounded-2xl text-center">
         <Image
-          src={reproductiveSystem}
+          src={reproductiveSystem3}
           width={50}
           height={50}
           alt="Personalized Treatment Plans"
-          className="rounded-lg mt-7"
+          className="rounded-full mt-7"
         />
-        <h3 className="font-semibold text-lg">Personalized Treatment Plans</h3>
+        <h3 className="font-semibold text-lg">{t("feature3Title")}</h3>
         <p className="text-sm sm:text-base text-gray-700 mb-5 md:text-lg">
-          Every fertility journey is different, with a variation of priorities.
-          To maximize your opportunity for success, we take the time to
-          understand your unique situation before designing your tailored
-          treatment plan.
+          {t("feature3Description")}
         </p>
       </div>
 
       <div className="px-5 flex flex-col items-center gap-4 bg-[#bce1f062] rounded-2xl text-center">
         <Image
-          src={reproductiveSystem}
+          src={reproductiveSystem4}
           width={50}
           height={50}
           alt="State-of-the-Art Technology"
-          className="rounded-lg mt-7"
+          className="rounded-full mt-7"
         />
-        <h3 className="font-semibold text-lg">State-of-the-Art Technology</h3>
+        <h3 className="font-semibold text-lg">{t("feature4Title")}</h3>
         <p className="text-sm sm:text-base text-gray-700 mb-5 md:text-lg">
-          We&apos;re committed to staying ahead of the curve, investing in the
-          latest fertility technologies and techniques. Our laboratory is
-          equipped with cutting-edge tools, and our team is dedicated to
-          continually improving outcomes through research and innovation.
+          {t("feature4Description")}
         </p>
       </div>
     </div>

@@ -41,10 +41,10 @@ export default function DavigationMenu() {
       </li>
       <li className="relative">
         <Link
-          href={`/${locale}/services`}
+          href={`/${locale}/faq`}
           className="block w-full h-full p-2 text-xl text-[#222222] font-medium transition duration-200"
         >
-          {t("services")}
+          {t("faq")}
         </Link>
       </li>
       <li className="relative z-50">

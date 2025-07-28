@@ -16,9 +16,6 @@ export default function SurrogacyAndEggDonationOptions() {
   return (
     <div className="px-5 md:px-20 mt-8 lg:mt-0 mb-30 lg:absolute lg:bottom-0 lg:left-20 lg:max-w-7xl lg:mx-auto ">
       <div className="flex flex-col gap-5">
-        {/* <div className="flex">
-          <p className="bg-[#A5D761] p-1 rounded-lg">Power of the choice</p>
-        </div> */}
         <h2 className="text-3xl font-bold lg:text-white">{t("title")}</h2>
         <p className="text-gray-700 lg:text-white  lg:mr-30">
           {t("description")}

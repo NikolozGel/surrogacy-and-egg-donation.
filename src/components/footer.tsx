@@ -79,11 +79,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div>
-          <button className="bg-blue-500 cursor-pointer hover:bg-blue-400 text-white px-4 py-2 rounded-md mt-10">
-            Register as Surrogate
-          </button>
-        </div>
+        <div></div>
       </div>
       <p className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
         {t("copyright")}

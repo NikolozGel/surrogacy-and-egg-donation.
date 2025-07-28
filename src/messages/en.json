@@ -31,44 +31,219 @@
     "becomeParentBtn": "Become a Parent",
     "becomeParentText": "Being a parent is one of life’s most significant experiences. We offer support and resources to make your journey to parenthood as smooth and enjoyable as possible."
   },
+  "homeAccordionFaq": {
+    "title": "Do you have any",
+    "title-highlight": "questions?",
+    "description": "Whether you're exploring IVF, considering fertility surgery, or navigating third-party reproduction, we offer a full range of services tailored to support you every step of the way. Your journey to parenthood starts right here. Reach out to VivaNest — together, we can make your dream of becoming a parent a reality.",
+    "fAQTitle": "Have more questions? Feel free to contact us or explore our FAQ page.",
+    "FAQContactBtn": "Contact Us",
+    "FAQPageBtn": "See FAQs",
+    "q1": {
+      "question": "How long does the entire surrogacy process usually take, from the very beginning until I hold my baby?",
+      "answer": "Typically, the full surrogacy journey takes between 12 to 18 months. This timeline includes finding the right surrogate, completing all medical and psychological screenings, signing legal agreements, going through embryo transfer, and, of course, the full term of pregnancy. Every journey is unique, but we’re here to guide you through each step with care and clarity."
+    },
+    "q2": {
+      "question": "I'm single — is it still possible for me to become a parent through your program?",
+      "answer": "Absolutely. In Georgia, both single men and single women are welcome to pursue parenthood through surrogacy or egg donation. We support individuals and couples from all walks of life, and we’ll work with you to create a personalized plan that fits your situation."
+    },
+    "q3": {
+      "question": "I’m ready to begin — what should be my first step?",
+      "answer": "That’s great to hear! The first step is to book a consultation with our expert team. During this meeting, we’ll get to know you, explain your options in detail, and help map out your journey — whether you're interested in surrogacy, egg donation, or another path to parenthood."
+    }
+  },
+  "contactCallToAction": {
+    "title": " If You Have Any Questions, Do Not Hesitate to Contact Us and Share Your Problems",
+    "description": "We understand that the road to parenthood can be filled with uncertainties and challenges, but it is also one of hope and possibilities. Arrange your initial consultation we're here for you.",
+    "btn": "Book a consultation"
+  },
   "introSection": {
-    "title": "What we",
-    "subtitle": "offer",
-    "description": " We’re dedicated to providing ethical, compassionate, and transparent care every step of the way. From your first consultation to welcoming your child, you’ll be supported, informed, and guided by trusted professionals—ensuring a smooth, safe, and successful journey.",
-    "secTitle": "Reproducitve Surgery",
-    "description2": " Sometimes, fertility challenges can be addressed with minor surgical intervention. Our experienced surgical team specializes in minimally invasive procedures to treat conditions like fibroids, endometriosis, or blocked tubes—enhancing your chance of a successful pregnancy.",
-    "thirdTitle": "Ferility Preservation",
-    "thirdDescription": "Whether due to medical treatment or personal timing, we offer egg, sperm, and embryo freezing options so you can plan your future with confidence, safety, and flexibility.",
+    "title": "What",
+    "subtitle": "We Offer",
+    "description": "Our mission is to walk alongside you at every step of your journey — from the first consultation to the moment you hold your baby in your arms. With genuine care, ethical guidance, and transparent support, our trusted professionals ensure your experience is safe, stable, and truly supportive.",
+    "secTitle": "Reproductive Surgery",
+    "description2": "In some cases, the causes of infertility can be addressed through minor surgical procedures. Our skilled surgical team specializes in minimally invasive treatments — including the removal of fibroids, treatment of endometriosis, or unblocking fallopian tubes — all of which can significantly improve your chances of a successful pregnancy.",
+    "thirdTitle": "Fertility Preservation",
+    "thirdDescription": "Whether prompted by medical reasons or personal life plans, preserving your fertility is an important step. We offer egg, sperm, and embryo freezing services, giving you the freedom and flexibility to plan your future with confidence and peace of mind.",
     "fourthTitle": "Surrogacy Services",
-    "fourthDescription": "We support a wide range of intended parents. Our ethical surrogacy process is supported by experienced legal and medical professionals, ensuring safety, clarity, and care at every step."
+    "fourthDescription": "We proudly support all types of intended parents on their path to parenthood through surrogacy. Our ethical, transparent process is guided by experienced legal and medical professionals, ensuring clarity, protection, and compassionate support at every stage."
   },
   "surrogacyOptions": {
-    "title": "Empowering Your path to Parenthood",
-    "description": " At fertility Options, we belive in the power of choice. The journey to parenthood is deeply personal and unique for every individual or couple, which is why we are committed to offering a range of tailored solutions. we ephasize the importance of providing diverse and flexible pathways to help you achive your dream of having a family.",
-    "button": " Book an appointment"
+    "title": "Empowering Your Path to Parenthood",
+    "description": "At VivaNest, we believe that every path to parenthood is unique — and every journey deserves compassion, respect, and options. We’re here to support you with flexible, personalized surrogacy solutions designed around your needs and dreams. With a strong focus on trust and care, our mission is to help you build the family you’ve always hoped for.",
+    "button": "Book an Appointment"
+  },
+  "ourMission": {
+    "title": "What Makes Us",
+    "subtitle": "Truly Exceptional",
+    "description": "Our mission is to provide every family with care rooted in the highest ethical standards and complete transparency. This is how we create a safe, calm, and trustworthy environment, where every step is well-considered and reliable.",
+    "h3Title": "Comprehensive Support Every Step of the Way",
+    "h3Description": "From IVF treatments and reproductive surgery to full-service surrogacy — we offer holistic, personalized solutions tailored to your needs. Your path to parenthood begins here. Connect with VivaNest and let’s make your dream a reality, together.",
+    "h4": "Innovative Technology for Your Success",
+    "h4Description": "Through the use of advanced technologies and modern methods, we deliver treatment that is focused on results and increase the chances of success.",
+    "h5": "A Personalized Approach to Every Journey",
+    "h5Description": "We value the uniqueness of every individual. That’s why we create custom-tailored treatment plans — as distinctive as each person we serve.",
+    "h6": "Ethics and Transparency at Every Stage",
+    "h6Description": "Trust is our core value. We respect every patient’s beliefs and ensure that every process is carried out with openness, integrity, and sincerity."
   },
 
-  "ourMission": {
-    "title": "What Makes",
-    "subtitle": "Us Special",
-    "description": " We're committed to the highest standards of ethics and transparency, so you always fell informed and confident every step of the way",
-    "h3Title": "Comprehensive Support",
-    "h3Description": "From IVF to fertility surgery and third-part reproductive, our wide range of services ensures we've got every aspect of your fertility needs covered. Your path to parenthood starts here. Contact Fertility Options today. and let's make your dream of becoming a parent a reality",
-    "h4Description": "We're all about the largest and greatest in fertility science. leveraging advanced technology to boost your chances of success.",
-    "h5Description": "Every fertility journey is unique story. and our approach is just as personalized. We create treatment plans that are as one of a kind as you are",
-    "h6Description": "We're committed to the highest standards of ethics and transparency, so you always fell informed and confident every step of the way "
-  },
   "aboutPage": {
-    "heading_line1": "We truly understand",
+    "heading_line1": "Your Joy Is Our Purpose",
+    "paragraph": "At VivaNest, every success story is a symbol of hope, courage, and new beginnings. It's a journey we walk together, and every step holds deep meaning for us.",
     "heading_highlight": "what you're going through",
-    "paragraph": "At Fertility Options, every success story is a testament to the hope, courage, and new beginnings we help create.",
     "successStory": "Success Story",
     "title": "Zeinab",
     "subtitle": "Doctor",
     "description": "Surrogacy is a unique and heartfelt path to building families for those who are unable to have children on their own. This process involves a compassionate and responsible woman who is willing to help individuals and couples realize their dream of parenthood. Surrogacy is not only a medical achievement but also a deeply human act that brings hope and joy to new families. Dr. Zeinab offers a reliable and safe environment, complete support, and professional care to ensure that every surrogacy journey ends successfully and with love.",
     "title-2": "Laliko",
     "subtitle-2": "Reproductologist",
-    "description-2": "Reproductive medicine is a remarkable field of healthcare dedicated to fulfilling the dream of starting a family. It’s deeply intertwined with emotions, responsibility, and the highest level of professionalism. Being a specialist in this area requires not only scientific expertise but also a profound understanding of people. Laliko wholeheartedly supports couples navigating the challenging journey to parenthood. Her mission goes beyond medical care—it includes psychological support and emotional guidance. Every consultation is filled with genuine care, warmth, and hope, giving each patient the chance to begin their unique story of happiness."
+    "description-2": "Reproductive medicine is a remarkable field of healthcare dedicated to fulfilling the dream of starting a family. It’s deeply intertwined with emotions, responsibility, and the highest level of professionalism. Being a specialist in this area requires not only scientific expertise but also a profound understanding of people. Laliko wholeheartedly supports couples navigating the challenging journey to parenthood. Her mission goes beyond medical care—it includes psychological support and emotional guidance. Every consultation is filled with genuine care, warmth, and hope, giving each patient the chance to begin their unique story of happiness.",
+    "title-3": "At VivaNest, we believe in the",
+    "highlight": "power of choice",
+    "paragraph1": "At VivaNest, we believe in the power of choice. The journey to parenthood is a deeply personal and unique experience for every individual and couple. That’s why we are dedicated to offering a wide range of personalized solutions. We are committed to providing diverse, flexible pathways that support you in achieving your dream of building a family.",
+    "paragraph2": "We recognize that the path to parenthood can be filled with uncertainties and emotional challenges, but it is also a journey of hope and possibility. Our mission is to empower you with choices that align with your values and circumstances. Whether you're considering IVF, egg donation, surrogacy, or other fertility options, our experienced team is here to guide you every step of the way toward the family you envision.",
+    "expectTitle": "What to",
+    "expectHighlight": "Expect",
+    "expectText": "Beginning your surrogacy journey can feel overwhelming — like stepping into unfamiliar territory. At VivaNest, our mission is to make that journey feel clear, supported, and human. From your very first question to the moment you hold your baby, we're here to walk alongside you. We’ll carefully match you with the right surrogate and help you select an ideal egg donor, while our legal team handles all the necessary paperwork. We also connect you with trusted fertility clinics and keep every detail organized, so you can focus on what truly matters. With our all-inclusive services and compassionate guidance, you're never alone on this path — we’re with you, every step of the way and beyond.",
+    "btnParent": "become a parent",
+    "btnSurrogate": "Become a surrogate",
+    "wayTitle": "Our",
+    "wayHighlight": "Way",
+    "wayText": "At VivaNest, we hold ourselves to the highest standards of ethics, honesty, and transparency. Every step of your journey is handled with clarity and care, so you always feel informed, respected, and confident moving forward.",
+    "feature1Title": "Holistic Fertility Care",
+    "feature1Description": "We see you as a whole person, not just a patient. Our holistic approach combines physical, emotional, and psychological support to create a nurturing environment where you always feel heard, understood, and cared for.",
+    "feature2Title": "Supportive Space",
+    "feature2Description": "We understand that fertility challenges can take a toll on both the heart and mind. That’s why we offer not only expert medical care, but also emotional support through counseling and group sessions—helping you navigate the emotional ups and downs of your journey.",
+    "feature3Title": "Personalized Treatment Plans",
+    "feature3Description": "No two fertility journeys are the same. We take time to listen and understand your personal goals and circumstances before creating a treatment plan designed just for you—giving you the best chance at success.",
+    "feature4Title": "State-of-the-Art Technology",
+    "feature4Description": "We are dedicated to remaining at the forefront of fertility innovation. Our laboratory is equipped with the most advanced technologies, and our specialists continuously pursue research and breakthroughs to deliver the highest quality of care.",
+    "guaranteeTitle": "VivaNest Options",
+    "guaranteeHighlighted": "Guarantee",
+    "guaranteeDescription": "Our Guarantee Program is designed to offer you both emotional and financial peace of mind. With a clear, fixed budget and the reassurance that your dream of having a baby will be fulfilled—no matter how many attempts it takes—you can move forward with confidence. This unique program provides complete transparency, long-term support, and our unwavering commitment to walk with you every step of the way until you bring your baby home.",
+    "benefitEggDonation": "Unlimited access to egg donation",
+    "benefitEmbryoTransfers": "No limit on embryo transfer attempts",
+    "benefitSurrogatePairings": "Unlimited surrogate matching opportunities",
+    "benefitPregnancyCare": "Comprehensive care throughout pregnancy"
+  },
+  "contactPage": {
+    "journeyTitlePart1": "Your Path",
+    "journeyTitlePart2": "to Possibility",
+    "journeyDescription": "Ready to advance your fertility journey? At VivaNest, we’re here to support you at every turn. Whether you need more details, wish to set up a consultation, or simply want to have a conversation, we’re ready to assist in any way we can.",
+    "consultationTitlePart1": "Book",
+    "consultationTitlePart2": "Your",
+    "consultationTitlePart3": "Consultation",
+    "consultationDescription": "Complete our online form or call us to arrange your initial consultation."
+  },
+  "prices": {
+    "pricingHeadline": "Clear and Flexible Surrogacy Pricing",
+    "pricingDescription": "Our surrogacy programs are thoughtfully crafted to suit the unique needs of every family. We offer complete transparency, straightforward pricing with no hidden fees, and dedicated support at every stage of your journey.",
+
+    "basicPackageTitle": "Basic Surrogacy Package",
+    "basicPackagePrice": "$39,000",
+    "basicFeature1": "Comprehensive initial medical screening to ensure eligibility and health readiness",
+    "basicFeature2": "Personalized surrogate matching with careful compatibility consideration",
+    "basicFeature3": "Full legal contract drafting and support to protect all parties involved",
+    "basicFeature4": "One embryo transfer cycle, including preparation and coordination",
+    "basicFeature5": "Ongoing pregnancy monitoring to ensure safety and progress at every stage",
+
+    "standardPackageTitle": "Standard Surrogacy Package",
+    "standardPackagePrice": "$54,000",
+    "standardFeature1": "Includes all services from the Basic Package",
+    "standardFeature2": "Unlimited embryo transfer attempts for increased chances of success",
+    "standardFeature3": "Monthly wellness reports to track the surrogate's health and progress",
+    "standardFeature4": "Professional psychological support throughout the journey",
+    "standardFeature5": "Airport pickup and comfortable accommodation arrangements for your visits",
+
+    "vipPackageTitle": "VIP Surrogacy Package",
+    "vipPackagePrice": "$72,000",
+    "vipFeature1": "Includes all services from the Standard Package",
+    "vipFeature2": "Dedicated personal coordinator for seamless communication and guidance",
+    "vipFeature3": "Exclusive care in a private medical facility for added comfort and privacy",
+    "vipFeature4": "Full maternity concierge service to assist with daily needs and logistics",
+    "vipFeature5": "Comprehensive legal and travel support after the birth of your child",
+
+    "includedSectionTitle": "What’s Included in Our Pricing?",
+    "includedParagraph1": "Each of our packages is thoughtfully designed to offer emotional support, top-tier medical care, legal assurance, and step-by-step guidance. Whether you're just beginning or continuing your path, we focus on trust, transparency, and personalized care.",
+    "includedParagraph2": "We believe parenthood should be accessible, empowering, and easy to navigate. That’s why we work closely with you to simplify every step, provide honest answers, and ensure clarity throughout your journey.",
+    "includedParagraph3": "Have specific medical or legal requirements? We also offer flexible, customizable plans tailored to your family's unique needs.",
+
+    "trustTagline": "Why Families Trust VivaNest",
+    "trustHeadline": "Compassionate Care. Proven Success. Trusted Worldwide.",
+    "trustParagraph": "Families from across the globe choose VivaNest for our exceptional outcomes, transparent pricing, and deeply personalized support. We’re proud to turn hope into reality for countless intended parents with dedication and heart.",
+
+    "ctaHeadline": "Ready to Begin Your Journey?",
+    "ctaParagraph": "Whether you're just exploring or ready to take the next step, VivaNest is here to walk beside you. Schedule your free consultation today and begin the journey toward growing your family.",
+    "ctaButtonLabel": "Schedule Your Free Consultation"
+  },
+  "services": {
+    "title1": "Frequently Asked",
+    "title2": "Questions",
+    "paragraph": "Every path to parenthood is deeply personal, and every decision you make is a meaningful step toward the future you dream of."
+  },
+  "FAQ": {
+    "q1": {
+      "question": "Can I meet my surrogate partner before the process begins?",
+      "answer": "You're warmly invited to visit us and meet our dedicated team. During your visit, you'll have the opportunity to tour our modern facilities, consult with our specialists, and explore how we can support your journey to parenthood."
+    },
+    "q2": {
+      "question": "I'm ready to begin my journey. What is the first step?",
+      "answer": "If you'd prefer to start from the comfort of your home, simply fill out our online inquiry form. This helps us understand your goals and questions, and a member of our team will reach out promptly to guide you forward."
+    },
+    "q3": {
+      "question": "What screenings are required to qualify as an egg donor?",
+      "answer": "Our egg donors go through a comprehensive evaluation, including medical, genetic, and psychological screenings, to ensure they meet the highest standards of health and eligibility."
+    },
+    "q4": {
+      "question": "What exactly is the guarantee program everyone talks about?",
+      "answer": "Our guarantee program is designed to provide you with peace of mind, both financially and emotionally. It ensures that if multiple attempts are needed, you're still fully supported throughout the journey, without unexpected costs."
+    },
+    "q5": {
+      "question": "I'm HIV positive and hopeful. Is surrogacy still an option for me?",
+      "answer": "Yes, absolutely. With proper medical protocols in place, many HIV positive individuals successfully pursue parenthood through surrogacy. Our team will guide you through every step with discretion and care."
+    },
+    "q6": {
+      "question": "How are surrogates screened before being approved?",
+      "answer": "Surrogates go through rigorous medical, psychological, and background screenings to ensure they are fully prepared, both physically and emotionally, for the journey ahead."
+    },
+    "q7": {
+      "question": "How long does it take to be matched with a surrogate?",
+      "answer": "Wait times can vary depending on your preferences and specific needs, but on average, intended parents are matched within a few weeks to a couple of months."
+    },
+    "q8": {
+      "question": "From day one, how long does the full surrogacy process take?",
+      "answer": "If everything goes smoothly, the process generally takes between 12 to 18 months, from initial consultation to holding your baby in your arms."
+    },
+    "q9": {
+      "question": "I'm single. Can I still pursue surrogacy?",
+      "answer": "Yes, of course. We proudly support individuals of all backgrounds, including single parents, in building the family they dream of."
+    },
+    "q10": {
+      "question": "What should I expect in terms of surrogacy costs?",
+      "answer": "Surrogacy is a significant investment, and costs can vary based on your chosen package and services. We provide full transparency with no hidden fees, so you can plan confidently from the start."
+    },
+    "q11": {
+      "question": "Can I meet my egg donor before we move forward with a match?",
+      "answer": "Yes, in many cases, we can arrange a meeting with your potential egg donor. We believe that comfort and trust are essential in this journey, and we're here to support your preferences."
+    },
+    "q12": {
+      "question": "Which countries are considered surrogacy friendly?",
+      "answer": "Countries like Georgia, the United States, Ukraine (under certain conditions), and Canada are known for having established legal frameworks supporting ethical surrogacy. Our team can advise you based on your citizenship and personal situation."
+    }
+  },
+  "modal": {
+    "headline": "Together, We Create Hope",
+    "paragraph1": "Facing infertility can be an overwhelming and emotional experience. But you are not alone. Every step forward opens new possibilities and rekindles hope.",
+    "paragraph2": "Through the kindness of donation and the generosity of surrogacy, families are created and lives are forever changed.",
+    "paragraph3": "Your involvement holds deep meaning. It’s a true act of compassion, courage, and the beginning of something beautiful.",
+    "paragraph4": "By taking this step, you can make a lasting difference in someone’s life and help build a future filled with love.",
+    "paragraph5": "Fill out the form below to become part of something extraordinary. Creating miracles, one life at a time.",
+    "button": "Send"
+  },
+  "clinic": {
+    "visitTitle": "Visit Our Clinic",
+    "visitText": "We warmly welcome you to visit our clinic and meet the passionate team behind VivaNest. During your visit, you’ll have the opportunity to explore our state-of-the-art facilities, speak directly with our experts, and learn more about how we can support your journey to parenthood.",
+    "onlineTitle": "Online Inquiry",
+    "onlineText": "Prefer to begin from the comfort of your home? Simply fill out our online inquiry form. Share your questions and details with us, and one of our dedicated coordinators will promptly get in touch to guide you through your next steps."
   },
   "sliderImage": {
     "title": "Eleanor Pena",
@@ -76,14 +251,14 @@
     "description": "Growing Families is a Charity which  works with intended parents, Heterosexual and Singles around the globe to educate and support their familty building journey with donors and surrogates. Formetly Families"
   },
   "footer": {
-    "copyright": "© 2023 My Application. All rights reserved."
+    "copyright": "© Clinic Persona 2025."
   },
   "pages": {
     "home": "home",
     "about": "about",
     "contact": "contact",
     "prices": "prices",
-    "services": "services"
+    "faq": "faq"
   },
   "registerPage": {
     "register-title": "The Power of Surrogacy & Egg Donation",

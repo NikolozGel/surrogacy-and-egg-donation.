@@ -1,5 +1,8 @@
 import Image from "next/image";
-import ReproductiveImage from "../../public/assets/images/reproductive-system.png";
+import reproductiveSurgery from "../../public/assets/images/reproductive-surgery.png";
+import fertilityPreservation from "../../public/assets/images/fertility-preservation.png";
+import surrogacyServices from "../../public/assets/images/surrogacy-services.png";
+
 import { useTranslations } from "next-intl";
 
 export default function SurrogacyIntroSection() {
@@ -28,7 +31,7 @@ export default function SurrogacyIntroSection() {
           <div className="bg-white py-5 rounded-lg hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer shadow-md hover:text-white active:text-white">
             <Image
               className="rounded-full mb-4 ml-5"
-              src={ReproductiveImage}
+              src={reproductiveSurgery}
               width={70}
               height={70}
               alt="reproductive image"
@@ -40,7 +43,7 @@ export default function SurrogacyIntroSection() {
           <div className="bg-white py-5 rounded-lg hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer shadow-md hover:text-white active:text-white">
             <Image
               className="rounded-full mb-4 ml-5"
-              src={ReproductiveImage}
+              src={fertilityPreservation}
               width={70}
               height={70}
               alt="reproductive image"
@@ -52,7 +55,7 @@ export default function SurrogacyIntroSection() {
           <div className="bg-white py-5 rounded-lg hover:bg-[#1db963] active:bg-[#1db963] transition duration-300 cursor-pointer shadow-md hover:text-white active:text-white">
             <Image
               className="rounded-full mb-4 ml-5"
-              src={ReproductiveImage}
+              src={surrogacyServices}
               width={70}
               height={70}
               alt="reproductive image"

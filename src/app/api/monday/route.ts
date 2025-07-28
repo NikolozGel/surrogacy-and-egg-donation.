@@ -3,7 +3,6 @@ export async function POST(req: Request) {
 
   const today = new Date().toISOString().split("T")[0];
 
-  // Use real column IDs from Monday
   const columnValues = {
     email_mksmase2: { email: email, text: email },
     phone_mksmc6xt: phone,
@@ -13,7 +12,6 @@ export async function POST(req: Request) {
 
   // Stringify and escape
   const escapedColumnValues = JSON.stringify(columnValues).replace(/"/g, '\\"');
-  console.log(escapedColumnValues);
   const query = `
     mutation {
       create_item (
@@ -43,7 +41,6 @@ export async function POST(req: Request) {
   });
 
   const data = await res.json();
-  console.log("✅ Monday Response:", data);
 
   return new Response(JSON.stringify(data), { status: 200 });
 }

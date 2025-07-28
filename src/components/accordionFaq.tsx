@@ -5,6 +5,8 @@ import Image from "next/image";
 import faqImage from "../../public/assets/logo/FAQ.png";
 import { Modal } from "antd";
 import ModalRegistrationForm from "./modalRegistrationForm";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 interface IData {
   id: string;
@@ -12,39 +14,41 @@ interface IData {
   answer: string;
 }
 
-const data: IData[] = [
-  {
-    id: "1",
-    question:
-      "What's the average timeline from day 1 to holding my baby in a surrogacy journey?",
-    answer:
-      "On average, the entire surrogacy journey takes about 12 to 18 months. This includes matching with a surrogate, medical preparations, legal agreements, the embryo transfer process, and the full pregnancy term.",
-  },
-  {
-    id: "2",
-    question: "I'm single can i make this happen?",
-    answer:
-      "Yes! Single men have options in Georgia. Single women also have options in Georgia.",
-  },
-  {
-    id: "3",
-    question: "I'm ready to start my journey what's step one?",
-    answer:
-      "The first step is to schedule a consultation with our team. We’ll guide you through the process, explain your options, and help you begin your personalized surrogacy or egg donation journey.",
-  },
-];
-
 export default function AccordionFaq() {
   const [selected, setSelected] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations("homeAccordionFaq");
+  const router = useRouter();
+  const locale = useLocale();
+
+  const handleClick = () => {
+    router.push(`/${locale}/faq`);
+  };
 
   function handleSingleSelection(getCurrentId: string) {
-    console.log(getCurrentId);
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
+  const data: IData[] = [
+    {
+      id: "1",
+      question: t("q1.question"),
+      answer: t("q1.answer"),
+    },
+    {
+      id: "2",
+      question: t("q2.question"),
+      answer: t("q2.answer"),
+    },
+    {
+      id: "3",
+      question: t("q3.question"),
+      answer: t("q3.answer"),
+    },
+  ];
 
   return (
     <div className="flex flex-col">
@@ -53,14 +57,11 @@ export default function AccordionFaq() {
         {/* Header section */}
         <section className="max-w-4xl text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Do you Have any <span className="text-[#008E8A]">Questions?</span>
+            {t("title")}
+            <span className="text-[#008E8A]"> {t("title-highlight")}</span>
           </h2>
           <p className="text-gray-600 text-sm md:text-base">
-            From IVF to fertility surgery and third-party reproduction, our wide
-            range of services ensures we&apos;ve got every aspect of your
-            fertility needs covered. Your path to parenthood starts here.
-            Contact Fertility Options today, and let&apos;s make your dream of
-            becoming a parent a reality.
+            {t("description")}
           </p>
         </section>
 
@@ -97,7 +98,7 @@ export default function AccordionFaq() {
                     selected === item.id ? "max-h-96" : "max-h-0"
                   }`}
                 >
-                  <div className="pb-2">{item.answer}</div>
+                  <div className="pb-5">{item.answer}</div>
                 </div>
               </div>
             ))}
@@ -106,19 +107,21 @@ export default function AccordionFaq() {
           {/* CTA Box */}
           <div className="bg-[#323232] lg:h-[300px] text-white rounded-2xl p-6 flex flex-col items-center justify-center text-center w-full lg:max-w-sm mx-auto">
             <Image src={faqImage} width={100} height={100} alt="faqImage" />
-            <h3 className="text-lg font-semibold mt-4">
-              You have different questions? Contact us or check FAQ Page
-            </h3>
+            <h3 className="text-lg font-semibold mt-4">{t("fAQTitle")}</h3>
             <div className="flex gap-4 mt-6 flex-col sm:flex-row mb-4">
               <button
                 className="bg-amber-300 text-black font-semibold py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer hover:bg-amber-500"
                 onClick={toggleModal}
               >
-                Contact Us
+                {t("FAQContactBtn")}
               </button>
-              <button className="border border-amber-300 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer">
-                FAQ
+              <button
+                className="border border-amber-300 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer hover:bg-gray-500"
+                onClick={handleClick}
+              >
+                {t("FAQPageBtn")}
               </button>
+
               <Modal
                 footer={false}
                 width={700}

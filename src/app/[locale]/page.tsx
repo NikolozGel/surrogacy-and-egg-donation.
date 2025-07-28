@@ -14,7 +14,7 @@ const images = [
     description: "description",
   },
   {
-    url: "/assets/doctors/beautiful-doctor.jpg",
+    url: "/assets/doctors/laliko.jpg",
     title: "title-2",
     subtitle: "subtitle-2",
     description: "description-2",
@@ -23,7 +23,7 @@ const images = [
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="bg-gray-50">
       <Slider />
       <div className="relative">
         <SurrogacyAndEggDonationOptions />

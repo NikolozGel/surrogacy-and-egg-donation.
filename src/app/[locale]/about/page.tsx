@@ -8,7 +8,7 @@ import GuaranteeSection from "@/components/sections/guaranteeSection";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-gray-50">
       {/* Responsive Hero Image */}
       <HeroImage />
 

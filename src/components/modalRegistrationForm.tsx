@@ -6,6 +6,7 @@ import * as yup from "yup";
 import axios from "axios";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 // ✅ Schema validation with Yup
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -37,7 +38,7 @@ export default function ModalRegistrationForm() {
   });
 
   const [successMessage, setSuccessMessage] = useState("");
-
+  const t = useTranslations("modal");
   const onSubmit = async (data: FormData) => {
     // 🛡️ Extra check to block submission if invalid
     if (!isValid) return;
@@ -56,28 +57,13 @@ export default function ModalRegistrationForm() {
       {/* ✅ Preserving original text content */}
       <div className="mb-8 bg-blue-50 p-4 rounded shadow">
         <h2 className="text-2xl font-semibold text-gray-700">
-          Together We Create Hope
+          {t("headline")}
         </h2>
-        <p className="mt-2 text-gray-700 text-lg">
-          Infertility can be a difficult and emotional journey, but you are not
-          alone. Every step forward brings new possibilities and renewed hope.
-        </p>
-        <p className="mt-2 text-gray-700 text-lg">
-          Through the kindness of donation and the generosity of surrogacy,
-          families are born and lives are transformed.
-        </p>
-        <p className="mt-2 text-gray-700 text-lg">
-          Your involvement means more than you know — it’s a gift of compassion,
-          strength, and new beginnings.
-        </p>
-        <p className="mt-2 text-gray-700 text-lg">
-          By taking this step, you can make a lasting difference in someone’s
-          life and help build a future filled with love.
-        </p>
-        <p className="mt-2 text-gray-700 text-lg">
-          Complete the form below to join us in creating miracles, one life at a
-          time.
-        </p>
+        <p className="mt-2 text-gray-700 text-lg">{t("paragraph1")}</p>
+        <p className="mt-2 text-gray-700 text-lg">{t("paragraph2")}</p>
+        <p className="mt-2 text-gray-700 text-lg">{t("paragraph3")}</p>
+        <p className="mt-2 text-gray-700 text-lg">{t("paragraph4")}</p>
+        <p className="mt-2 text-gray-700 text-lg">{t("paragraph5")}</p>
       </div>
 
       {successMessage ? (
@@ -141,7 +127,7 @@ export default function ModalRegistrationForm() {
               type="submit"
               className="p-2 bg-blue-500 text-lg text-white rounded-full w-[200px] hover:bg-blue-500 transition cursor-pointer"
             >
-              Send Message
+              {t("button")}
             </button>
           </div>
         </form>
