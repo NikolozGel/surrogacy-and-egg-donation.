@@ -85,7 +85,7 @@ export default function Page() {
   }
   return (
     <div>
-      <div className="relative w-full aspect-[16/5] max-h-[80vh]">
+      <div className="relative w-full aspect-[16/9] max-h-[65vh]">
         <Image
           src={coverPhoto}
           alt="coverImage"

@@ -2,13 +2,14 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import LocalSwitcher from "./localSwitcher";
 
-export default function DavigationMenu() {
+export default function DavigationMenu({ closeMenu }) {
   const locale = useLocale();
   const t = useTranslations("pages");
   return (
     <ul className="pl-6 block lg:hidden">
       <li className="relative">
         <Link
+          onClick={closeMenu}
           href={`/${locale}/`}
           className="block w-full h-full p-2 text-xl text-[#222222] font-medium transition duration-200"
         >
@@ -17,6 +18,7 @@ export default function DavigationMenu() {
       </li>
       <li className="relative">
         <Link
+          onClick={closeMenu}
           href={`/${locale}/about`}
           className="block w-full h-full p-2 text-xl text-[#222222] font-medium transition duration-200"
         >
@@ -25,6 +27,7 @@ export default function DavigationMenu() {
       </li>
       <li className="relative">
         <Link
+          onClick={closeMenu}
           href={`/${locale}/contact`}
           className="block w-full h-full p-2 text-xl text-[#222222] font-medium transition duration-200"
         >
@@ -33,6 +36,7 @@ export default function DavigationMenu() {
       </li>
       <li className="relative">
         <Link
+          onClick={closeMenu}
           href={`/${locale}/prices`}
           className="block w-full h-full p-2 text-xl text-[#222222] font-medium transition duration-200"
         >
@@ -41,6 +45,7 @@ export default function DavigationMenu() {
       </li>
       <li className="relative">
         <Link
+          onClick={closeMenu}
           href={`/${locale}/faq`}
           className="block w-full h-full p-2 text-xl text-[#222222] font-medium transition duration-200"
         >

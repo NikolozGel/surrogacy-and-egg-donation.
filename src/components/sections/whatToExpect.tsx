@@ -2,8 +2,10 @@ import Image from "next/image";
 
 import mother1 from "../../../public/assets/images/mother-1.jpg";
 import mother2 from "../../../public/assets/images/mother-2.jpg";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 export default function WhatToExpect() {
+  const locale = useLocale();
   const t = useTranslations("aboutPage");
   return (
     <div className="px-4 sm:px-6 lg:px-10 max-w-7xl mx-auto py-16">
@@ -45,12 +47,14 @@ export default function WhatToExpect() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <button className="bg-[#FFEFBD] text-[#1F5673] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#ffe29b] cursor-pointer">
-              {t("btnParent")}
-            </button>
-            <button className="bg-[#DFF5E1] text-[#237A57] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#c8eacb] cursor-pointer">
-              {t("btnSurrogate")}
-            </button>
+            <Link href={`/${locale}/contact#registerForm`}>
+              <button className="bg-[#FFEFBD] text-[#1F5673] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#ffe29b] cursor-pointer">
+                {t("btnParent")}
+              </button>
+              <button className="bg-[#DFF5E1] text-[#237A57] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#c8eacb] cursor-pointer">
+                {t("btnSurrogate")}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

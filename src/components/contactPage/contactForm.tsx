@@ -59,7 +59,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" id="registerForm">
       <form
         className="bg-gray-100 p-6 rounded-lg flex-1 shadow-md flex flex-col gap-5"
         onSubmit={handleSubmit(onSubmit)}

@@ -78,7 +78,7 @@ export default function AccordionFaq() {
                 }`}
                 style={{ minHeight: "80px" }}
               >
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between">
                   <h3 className="font-semibold text-sm sm:text-base lg:text-lg">
                     {item.question}
                   </h3>

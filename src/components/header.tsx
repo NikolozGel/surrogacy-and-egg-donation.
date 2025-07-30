@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-
+  console.log(isMenuOpen);
   const handleHamburgerMenuChange = () => {
     if (isAnimating) return;
     setIsAnimating(true);
@@ -40,7 +40,7 @@ export default function Header() {
               transition={{ duration: 0.4, ease: "easeInOut" }}
               onAnimationComplete={() => setIsAnimating(false)} // ანიმაციის დასრულების შემდეგ
             >
-              <NavigationMenu />
+              <NavigationMenu closeMenu={() => setIsMenuOpen(false)} />
             </motion.div>
           )}
         </AnimatePresence>
