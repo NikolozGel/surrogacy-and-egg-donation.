@@ -26,15 +26,15 @@ export default function OurMissionSection() {
 
   return (
     <section className="my-16 px-4 sm:px-6 lg:px-24 xl:px-32">
-      <div className="flex justify-center gap-18">
+      <div className="flex justify-center items-center gap-18">
         {/* Text Section */}
         <div className="flex flex-col gap-8">
           {blocks.map((block, index) => (
             <div className="flex items-start gap-4" key={index}>
               <Image
                 src={DoneImage}
-                width={40}
-                height={40}
+                width={30}
+                height={30}
                 alt="Check icon"
                 className="mt-1 shrink-0"
               />
@@ -51,7 +51,7 @@ export default function OurMissionSection() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full max-w-xl xl:max-w-[500px] hidden xl:block h-full">
+        <div className="w-full max-w-xl xl:max-w-[600px] hidden xl:block h-full">
           <Image
             className="rounded-xl object-cover"
             src="/assets/clinic/clinic-2.JPG"

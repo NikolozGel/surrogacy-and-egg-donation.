@@ -22,7 +22,7 @@ export default function SurrogacyAndEggDonationOptions() {
         </p>
         <div>
           <button
-            className="p-2 sm:p-3 rounded-xl bg-blue-400 text-white cursor-pointer hover:bg-blue-500 transition duration-300 text-lg font-semibold"
+            className="p-2 sm:p-3 rounded-xl bg-[#10B981] hover:opacity-70  text-white cursor-pointer text-lg font-semibold"
             onClick={toggleModal}
           >
             {t("button")}

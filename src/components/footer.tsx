@@ -51,7 +51,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Donate Eggs
+                Become a parent
               </a>
             </li>
             <li>

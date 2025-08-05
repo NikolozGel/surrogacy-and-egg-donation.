@@ -37,9 +37,8 @@ export default function WhatToExpect() {
 
         {/* Right Text Column */}
         <div className="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            {t("expectTitle")}{" "}
-            <span className="text-[#88C040]">{t("expectHighlight")}</span>
+          <h2 className="text-2xl text-gray-700 sm:text-3xl font-bold mb-4">
+            {t("expectTitle")} {t("expectHighlight")}
           </h2>
           <p className="text-gray-700 text-base sm:text-lg mb-6">
             {t("expectText")}
@@ -48,12 +47,12 @@ export default function WhatToExpect() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-10">
             <Link href={`/${locale}/become-a-parent`}>
-              <button className="bg-[#FFEFBD] text-[#1F5673] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#ffe29b] cursor-pointer">
+              <button className="bg-[#10B981] hover:opacity-70 text-white font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow  cursor-pointer">
                 {t("btnParent")}
               </button>
             </Link>
             <Link href={`/${locale}/become-a-surrogate`}>
-              <button className="bg-[#DFF5E1] text-[#237A57] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#c8eacb] cursor-pointer">
+              <button className="bg-[#10B981] hover:opacity-70 text-white font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow  cursor-pointer">
                 {t("btnSurrogate")}
               </button>
             </Link>

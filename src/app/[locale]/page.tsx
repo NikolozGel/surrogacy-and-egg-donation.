@@ -8,16 +8,16 @@ import ContactCallToAction from "@/components/contactCallToAction";
 
 const images = [
   {
-    url: "/assets/clinic/zizi.JPG",
-    title: "title",
-    subtitle: "subtitle",
-    description: "description",
-  },
-  {
     url: "/assets/doctors/laliko.jpg",
     title: "title-2",
     subtitle: "subtitle-2",
     description: "description-2",
+  },
+  {
+    url: "/assets/clinic/zizi.JPG",
+    title: "title",
+    subtitle: "subtitle",
+    description: "description",
   },
 ];
 

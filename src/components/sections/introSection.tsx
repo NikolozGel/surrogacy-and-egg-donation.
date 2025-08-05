@@ -4,8 +4,8 @@ export default function IntroSection() {
   const t = useTranslations("aboutPage");
   return (
     <div className="mb-20 text-center">
-      <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-4">
-        {t("title-3")} <span className="text-[#FCCB40]"> {t("highlight")}</span>
+      <h2 className="font-bold text-xl text-gray-700 sm:text-2xl lg:text-3xl mb-4">
+        {t("title-3")} {t("highlight")}
       </h2>
 
       <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-4">

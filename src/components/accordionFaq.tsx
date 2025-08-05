@@ -56,9 +56,9 @@ export default function AccordionFaq() {
       <main className="flex-1 px-4 py-8 flex flex-col items-center">
         {/* Header section */}
         <section className="max-w-4xl text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-2xl text-gray-700 md:text-3xl font-bold mb-4">
             {t("title")}
-            <span className="text-[#008E8A]"> {t("title-highlight")}</span>
+            {t("title-highlight")}
           </h2>
           <p className="text-gray-600 text-sm md:text-base">
             {t("description")}
@@ -109,13 +109,13 @@ export default function AccordionFaq() {
             <h3 className="text-lg font-semibold mt-4">{t("fAQTitle")}</h3>
             <div className="flex gap-4 mt-6 flex-col sm:flex-row mb-4">
               <button
-                className="bg-amber-300 text-black font-semibold py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer hover:bg-amber-500"
+                className=" bg-[#10B981] hover:opacity-70 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer "
                 onClick={toggleModal}
               >
                 {t("FAQContactBtn")}
               </button>
               <button
-                className="border border-amber-300 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer hover:bg-gray-500"
+                className="bg-[#10B981] hover:opacity-70 border-amber-300 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer "
                 onClick={handleClick}
               >
                 {t("FAQPageBtn")}

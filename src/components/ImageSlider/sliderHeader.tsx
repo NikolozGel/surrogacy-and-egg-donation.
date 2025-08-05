@@ -4,10 +4,10 @@ export default function SliderHeader() {
   const t = useTranslations("aboutPage");
   return (
     <section className="mb-8 text-center">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+      <h2 className="text-2xl text-gray-700 sm:text-3xl font-bold">
         {t("heading_line1")}
         <br />
-        <span className="text-[#FCCB40]"> {t("heading_highlight")}</span>
+        {t("heading_highlight")}
       </h2>
       <p className="mt-4 text-gray-600 text-md  md:text-lg max-w-2xl mx-auto">
         {t("paragraph")}
