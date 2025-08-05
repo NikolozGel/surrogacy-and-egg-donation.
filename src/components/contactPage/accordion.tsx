@@ -22,14 +22,14 @@ export default function Accordion({
   const rightSide = data.slice(mid);
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 mt-5">
+    <div className="flex flex-col lg:flex-row gap-4 mt-5 px-6 sm:px-10 lg:px-20 xl:px-30">
       {[leftSide, rightSide].map((half, index) => (
-        <div key={index} className="flex flex-col gap-3 w-full ">
+        <div key={index} className="flex flex-col gap-3 w-full">
           {half.map((item) => (
             <div
               key={item.id}
               onClick={() => onSelect(item.id)}
-              className={`w-full border border-gray-200 rounded-lg p-4 cursor-pointer transition-all duration-300 ${
+              className={`w-full border border-gray-200 rounded-lg p-3.5 cursor-pointer transition-all duration-300 ${
                 selected === item.id ? "bg-[#008E8A] text-white" : "bg-white"
               }`}
             >
@@ -51,7 +51,7 @@ export default function Accordion({
                   selected === item.id ? "" : "max-h-0"
                 }`}
               >
-                <div className="">{item.answer}</div>
+                <div>{item.answer}</div>
               </div>
             </div>
           ))}

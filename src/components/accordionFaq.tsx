@@ -68,7 +68,7 @@ export default function AccordionFaq() {
         {/* FAQ & CTA Section */}
         <div className="flex flex-col lg:flex-row gap-8 w-full max-w-6xl">
           {/* Accordion (scrollable) */}
-          <div className="flex-1 flex flex-col gap-4 h-[400px] overflow-y-auto pr-1">
+          <div className="flex-1 flex flex-col gap-4 pr-1">
             {data.map((item) => (
               <div
                 key={item.id}
@@ -76,7 +76,6 @@ export default function AccordionFaq() {
                 className={`w-full border border-gray-200 rounded-lg p-4 transition-all duration-300 cursor-pointer ${
                   selected === item.id ? "bg-[#008E8A] text-white" : "bg-white"
                 }`}
-                style={{ minHeight: "80px" }}
               >
                 <div className="flex justify-between">
                   <h3 className="font-semibold text-sm sm:text-base lg:text-lg">

@@ -52,17 +52,27 @@ export default function ModalRegistrationForm() {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-5">
       {/* ✅ Preserving original text content */}
-      <div className="mb-8 bg-blue-50 p-4 rounded shadow">
-        <h2 className="text-2xl font-semibold text-gray-700">
+      <div className="mb-8 p-4">
+        <h2 className="text-lg md:text-2xl font-semibold text-gray-700">
           {t("headline")}
         </h2>
-        <p className="mt-2 text-gray-700 text-lg">{t("paragraph1")}</p>
-        <p className="mt-2 text-gray-700 text-lg">{t("paragraph2")}</p>
-        <p className="mt-2 text-gray-700 text-lg">{t("paragraph3")}</p>
-        <p className="mt-2 text-gray-700 text-lg">{t("paragraph4")}</p>
-        <p className="mt-2 text-gray-700 text-lg">{t("paragraph5")}</p>
+        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+          {t("paragraph1")}
+        </p>
+        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+          {t("paragraph2")}
+        </p>
+        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+          {t("paragraph3")}
+        </p>
+        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+          {t("paragraph4")}
+        </p>
+        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+          {t("paragraph5")}
+        </p>
       </div>
 
       {successMessage ? (

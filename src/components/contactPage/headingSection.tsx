@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export default function HeadingSection() {
   const t = useTranslations("contactPage");
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-6 sm:px-10 lg:px-20 xl:px-30">
       <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 text-[#A5D761]">
         {t("journeyTitlePart1")}
         <span className="text-gray-800"> {t("journeyTitlePart2")}</span>
