@@ -46,11 +46,13 @@ export default function WhatToExpect() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <Link href={`/${locale}/contact#registerForm`}>
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-10">
+            <Link href={`/${locale}/become-a-parent`}>
               <button className="bg-[#FFEFBD] text-[#1F5673] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#ffe29b] cursor-pointer">
                 {t("btnParent")}
               </button>
+            </Link>
+            <Link href={`/${locale}/become-a-surrogate`}>
               <button className="bg-[#DFF5E1] text-[#237A57] font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow hover:bg-[#c8eacb] cursor-pointer">
                 {t("btnSurrogate")}
               </button>

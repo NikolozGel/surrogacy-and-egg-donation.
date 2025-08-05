@@ -37,7 +37,11 @@ export default function ImageSlider({ images }: ImageSliderProps) {
           <SliderArrows onPrevious={handlePrevious} onNext={handleNext} />
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-10 w-full items-stretch">
-            <SliderImage images={images} currentSlide={currentSlide} />
+            <SliderImage
+              images={images}
+              currentSlide={currentSlide}
+              setCurrentSlide={setCurrentSlide}
+            />
             <SliderText image={images[currentSlide]} />
           </div>
 

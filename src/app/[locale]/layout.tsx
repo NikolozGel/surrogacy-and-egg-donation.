@@ -4,13 +4,11 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import "../[locale]/globals.css";
-
 import { Raleway } from "next/font/google";
 import { Metadata } from "next";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
-// import TopHeader from "@/components/topHeader";
 
 const dmSans = Raleway({
   subsets: ["latin"],
@@ -20,17 +18,17 @@ const dmSans = Raleway({
 
 export const metadata: Metadata = {
   title: {
-    default: "Surrogacy and Egg Donation in Georgia | VivaNest",
-    template: "%s | VivaNest",
+    default: "Surrogacy and Egg Donation in Georgia | IVFertility",
+    template: "%s | IVFertility",
   },
   description:
-    "Explore trusted surrogacy and egg donation programs in Georgia. VivaNest offers ethical, legally secure, and fully supported paths to parenthood for international intended parents. სუროგაცია საქართველოში უცხოელი მშობლებისთვის — სრული მხარდაჭერა, სამართლებრივი გარანტია და გამოცდილება.",
+    "Explore trusted surrogacy and egg donation programs in Georgia. IVFertility offers ethical, legally secure, and fully supported paths to parenthood for international intended parents. სუროგაცია საქართველოში უცხოელი მშობლებისთვის — სრული მხარდაჭერა, სამართლებრივი გარანტია და გამოცდილება.",
   openGraph: {
-    title: "Surrogacy and Egg Donation in Georgia | VivaNest",
+    title: "Surrogacy and Egg Donation in Georgia | IVFertility",
     description:
       "Ethical and guaranteed surrogacy programs in Georgia. Full support and legal safety for international parents.",
     url: "https://yourdomain.com",
-    siteName: "VivaNest",
+    siteName: "IVFertility",
     locale: "en_US",
     type: "website",
     images: [
@@ -38,15 +36,15 @@ export const metadata: Metadata = {
         url: "https://yourdomain.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Surrogacy in Georgia - VivaNest",
+        alt: "Surrogacy in Georgia - IVFertility",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Surrogacy and Egg Donation in Georgia | VivaNest",
+    title: "Surrogacy and Egg Donation in Georgia | IVFertility",
     description:
-      "International surrogacy programs in Georgia with full legal and medical support. Begin your journey with VivaNest.",
+      "International surrogacy programs in Georgia with full legal and medical support. Begin your journey with IVFertility.",
     images: ["https://yourdomain.com/og-image.jpg"],
   },
   metadataBase: new URL("https://yourdomain.com"),
@@ -87,8 +85,8 @@ export default async function LocaleLayout({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="fixed bottom-5 p-2 right-20 z-50 rounded-full bg-[#00AE8A] hover:bg-green-400">
-              <FaWhatsapp size={70} color="white" />
+            <div className="fixed bottom-5 p-2 right-20 z-50 rounded-full bg-[#00AE8A] hover:bg-green-400 transition-all duration-300">
+              <FaWhatsapp className="h-13 w-13 lg:w-18 lg:h-18" color="white" />
             </div>
           </Link>
           <ScrollToTopButton />

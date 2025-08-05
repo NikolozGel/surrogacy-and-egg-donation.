@@ -56,8 +56,8 @@ export default function Page() {
   ];
 
   return (
-    <div className="my-10 px-4 md:px-10 bg-gray-50">
-      <div className="w-full px-4 my-14 md:px-35 h-[400px]">
+    <div className="my-10 bg-gray-50 px-5 md:px-12 lg:px-19">
+      <div className="w-full my-14">
         <div className="flex flex-col lg:flex-row gap-16 justify-center pt-10">
           <div>
             <HeadingSection />

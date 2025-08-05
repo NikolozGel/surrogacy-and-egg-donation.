@@ -47,7 +47,7 @@ export default function ClientSlider() {
       />
       <div>
         <h2 className="font-bold text-xl sm:text-3xl lg:text-3xl mb-4">
-          What Our <span className="text-[#00AE8A]"> Client Say</span>
+          What Our <span className="text-[#00AE8A]"> Client Says</span>
         </h2>
 
         <div className="bg-[#d5f5ec] rounded-lg mb-5 pb-3">

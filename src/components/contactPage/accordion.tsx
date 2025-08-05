@@ -22,7 +22,7 @@ export default function Accordion({
   const rightSide = data.slice(mid);
 
   return (
-    <div className="flex flex-col sm:h-[950px] md:h-[850px] lg:h-[650px] lg:flex-row gap-6 mt-5 px-2  md:px-10 lg:px-32">
+    <div className="flex flex-col lg:flex-row gap-4 mt-5">
       {[leftSide, rightSide].map((half, index) => (
         <div key={index} className="flex flex-col gap-3 w-full ">
           {half.map((item) => (
@@ -51,7 +51,7 @@ export default function Accordion({
                   selected === item.id ? "" : "max-h-0"
                 }`}
               >
-                <div className="pb-2">{item.answer}</div>
+                <div className="">{item.answer}</div>
               </div>
             </div>
           ))}

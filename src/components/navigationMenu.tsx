@@ -2,7 +2,11 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import LocalSwitcher from "./localSwitcher";
 
-export default function DavigationMenu({ closeMenu }) {
+interface ICloseMenu {
+  closeMenu: () => void;
+}
+
+export default function DavigationMenu({ closeMenu }: ICloseMenu) {
   const locale = useLocale();
   const t = useTranslations("pages");
   return (

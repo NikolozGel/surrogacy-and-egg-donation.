@@ -9,7 +9,7 @@ export default function SliderHeader() {
         <br />
         <span className="text-[#FCCB40]"> {t("heading_highlight")}</span>
       </h2>
-      <p className="mt-4 text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+      <p className="mt-4 text-gray-600 text-md  md:text-lg max-w-2xl mx-auto">
         {t("paragraph")}
       </p>
     </section>

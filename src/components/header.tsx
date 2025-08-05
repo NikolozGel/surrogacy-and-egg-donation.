@@ -21,7 +21,7 @@ export default function Header() {
       <nav className="relative">
         <div className="flex justify-between lg:justify-evenly px-5">
           <Link href="/">
-            <p className="text-4xl font-semibold text-teal-900">VivaNest</p>
+            <p className="text-4xl font-semibold text-teal-900">IVFertility</p>
           </Link>
           <DesktopNavigationMenu />
           <RxHamburgerMenu
