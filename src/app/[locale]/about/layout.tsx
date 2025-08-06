@@ -1,5 +1,3 @@
-// app/[locale]/become-a-parent/layout.tsx
-
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -10,11 +8,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({
     locale: params.locale,
-    namespace: "parentPage",
+    namespace: "aboutPage",
   });
 
   const baseUrl = "https://ivfertilitygeorgia.com";
-  const url = `${baseUrl}/${params.locale}/become-a-parent`;
+  const url = `${baseUrl}/${params.locale}/about`;
 
   return {
     title: t("seoTitle"),
@@ -26,7 +24,7 @@ export async function generateMetadata({
       siteName: "IVFertilityGeorgia",
       images: [
         {
-          url: `${baseUrl}/og/become-a-parent.jpg`,
+          url: `${baseUrl}/og/about.jpg`,
           width: 1200,
           height: 630,
           alt: t("ogImageAlt"),
@@ -45,10 +43,10 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
       languages: {
-        en: `${baseUrl}/en/become-a-parent`,
-        ka: `${baseUrl}/ka/become-a-parent`,
-        ru: `${baseUrl}/ru/become-a-parent`,
-        zh: `${baseUrl}/zh/become-a-parent`,
+        en: `${baseUrl}/en/about`,
+        ka: `${baseUrl}/ka/about`,
+        ru: `${baseUrl}/ru/about`,
+        zh: `${baseUrl}/zh/about`,
       },
     },
     robots: {
@@ -58,11 +56,6 @@ export async function generateMetadata({
   };
 }
 
-// ⛳ ეს აუცილებელია layout.tsx-ში
-export default function ParentLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return <>{children}</>; // თუ გინდა, აქ შეგიძლია დაამატო wrapper div, სტილები და სხვ.
+export default function FaqLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }
