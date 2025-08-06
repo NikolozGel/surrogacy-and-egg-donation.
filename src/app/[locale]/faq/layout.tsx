@@ -4,15 +4,17 @@ import type { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  const { locale } = await params;
+
   const t = await getTranslations({
-    locale: params.locale,
-    namespace: "faqPage",
+    locale,
+    namespace: "faq",
   });
 
   const baseUrl = "https://ivfertilitygeorgia.com";
-  const url = `${baseUrl}/${params.locale}/faq`;
+  const url = `${baseUrl}/${locale}/faq`;
 
   return {
     title: t("seoTitle"),
@@ -31,11 +33,11 @@ export async function generateMetadata({
         },
       ],
       locale:
-        params.locale === "ka"
+        locale === "ka"
           ? "ka_GE"
-          : params.locale === "ru"
+          : locale === "ru"
           ? "ru_RU"
-          : params.locale === "zh"
+          : locale === "zh"
           ? "zh_CN"
           : "en_US",
       type: "website",

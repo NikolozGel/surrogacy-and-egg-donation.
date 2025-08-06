@@ -4,15 +4,17 @@ import type { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Record<string, string>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  const { locale } = await params;
+
   const t = await getTranslations({
-    locale: params.locale,
+    locale,
     namespace: "aboutPage",
   });
 
   const baseUrl = "https://ivfertilitygeorgia.com";
-  const url = `${baseUrl}/${params.locale}/about`;
+  const url = `${baseUrl}/${locale}/about`;
 
   return {
     title: t("seoTitle"),
@@ -31,11 +33,11 @@ export async function generateMetadata({
         },
       ],
       locale:
-        params.locale === "ka"
+        locale === "ka"
           ? "ka_GE"
-          : params.locale === "ru"
+          : locale === "ru"
           ? "ru_RU"
-          : params.locale === "zh"
+          : locale === "zh"
           ? "zh_CN"
           : "en_US",
       type: "website",
@@ -56,6 +58,10 @@ export async function generateMetadata({
   };
 }
 
-export default function FaqLayout({ children }: { children: React.ReactNode }) {
+export default function AboutLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return <>{children}</>;
 }

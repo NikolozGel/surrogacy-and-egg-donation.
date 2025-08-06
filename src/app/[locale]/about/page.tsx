@@ -6,9 +6,6 @@ import FooterCTA from "@/components/sections/footerCTA";
 import FeatureBlocks from "@/components/sections/featureBlocks";
 import GuaranteeSection from "@/components/sections/guaranteeSection";
 
-// ✅ SEO metadata გენერაცია
-
-// ✅ კომპონენტური გვერდი
 export default function Page() {
   return (
     <div className="bg-gray-50">
