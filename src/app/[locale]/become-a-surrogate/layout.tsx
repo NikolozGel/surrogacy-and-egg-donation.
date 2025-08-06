@@ -1,18 +1,20 @@
 import { getTranslations } from "next-intl/server";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  const { locale } = await params;
+
   const t = await getTranslations({
-    locale: params.locale,
+    locale,
     namespace: "surrogatePage",
   });
 
   const baseUrl = "https://ivfertilitygeorgia.com";
-  const url = `${baseUrl}/${params.locale}/become-a-surrogate`;
+  const url = `${baseUrl}/${locale}/become-a-surrogate`;
 
   return {
     title: t("seoTitle"),
@@ -31,11 +33,11 @@ export async function generateMetadata({
         },
       ],
       locale:
-        params.locale === "ka"
+        locale === "ka"
           ? "ka_GE"
-          : params.locale === "ru"
+          : locale === "ru"
           ? "ru_RU"
-          : params.locale === "zh"
+          : locale === "zh"
           ? "zh_CN"
           : "en_US",
       type: "website",

@@ -1,20 +1,20 @@
-// app/[locale]/become-a-parent/layout.tsx
-
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  const { locale } = await params;
+
   const t = await getTranslations({
-    locale: params.locale,
+    locale,
     namespace: "parentPage",
   });
 
   const baseUrl = "https://ivfertilitygeorgia.com";
-  const url = `${baseUrl}/${params.locale}/become-a-parent`;
+  const url = `${baseUrl}/${locale}/become-a-parent`;
 
   return {
     title: t("seoTitle"),
@@ -33,11 +33,11 @@ export async function generateMetadata({
         },
       ],
       locale:
-        params.locale === "ka"
+        locale === "ka"
           ? "ka_GE"
-          : params.locale === "ru"
+          : locale === "ru"
           ? "ru_RU"
-          : params.locale === "zh"
+          : locale === "zh"
           ? "zh_CN"
           : "en_US",
       type: "website",
@@ -58,11 +58,10 @@ export async function generateMetadata({
   };
 }
 
-// ⛳ ეს აუცილებელია layout.tsx-ში
 export default function ParentLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>; // თუ გინდა, აქ შეგიძლია დაამატო wrapper div, სტილები და სხვ.
+  return <>{children}</>;
 }
