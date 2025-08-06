@@ -1,17 +1,8 @@
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 import HappyFamily from "../../../../public/assets/images/family-3.png";
-import { Modal } from "antd";
-import ModalRegistrationForm from "@/components/modalRegistrationForm";
+import FinalCTA from "@/components/become-a-parent/finalCTA";
 
 export default function BecomeAParentPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
   return (
     <div className="w-full bg-white text-gray-800">
       {/* Hero */}
@@ -135,31 +126,7 @@ export default function BecomeAParentPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="bg-gray-50 text-center py-16 px-4">
-        <h2 className="text-3xl font-bold mb-4 text-gray-700">
-          Ready to Begin Your Family Journey?
-        </h2>
-        <p className="text-gray-700 mb-6">
-          Let us be your guide. Together, we’ll take the first steps toward
-          building the family you’ve been dreaming of.
-        </p>
-        <button
-          onClick={toggleModal}
-          className="inline-block bg-[#00AE8A] hover:opacity-65 cursor-pointer text-white font-medium px-6 py-3 rounded-md  transition"
-        >
-          Contact Us
-        </button>
-      </section>
-      <Modal
-        footer={false}
-        width={700}
-        open={isModalOpen}
-        onOk={() => setIsModalOpen(false)}
-        onCancel={() => setIsModalOpen(false)}
-      >
-        <ModalRegistrationForm />
-      </Modal>
+      <FinalCTA />
     </div>
   );
 }

@@ -1,5 +1,8 @@
 {
   "homePage": {
+    "seoTitle": "格鲁吉亚代孕与卵子捐赠机构 | IVFertilityGeorgia",
+    "seoDescription": "通过关爱、信任和专业服务帮助实现生育梦想。了解我们在格鲁吉亚提供的代孕、试管婴儿和卵子捐赠项目。",
+    "ogImageAlt": "在格鲁吉亚成功代孕后的幸福家庭",
     "registrationBtn": "联系我们了解更多信息",
     "topHeaderTitle": "每一段成为父母的旅程都是独一无二的。我们在这里陪伴你的旅程。",
     "register": "立即注册",
@@ -86,6 +89,9 @@
     "h6Description": "信任是我们最重要的价值。我们尊重每位客户的信念，确保整个过程始终保持公开、诚信和真诚。"
   },
   "aboutPage": {
+    "seoTitle": "关于 IVFertilityGeorgia | 我们的使命与价值观",
+    "seoDescription": "了解我们在生育治疗方面富有同情心和专业精神的服务理念。认识我们的专家团队，了解我们如何以诚信和关爱陪伴家庭成长。",
+    "ogImageAlt": "我们的团队正在支持未来父母的生育之旅",
     "heading_line1": "您的喜悦，就是我们的使命",
     "paragraph": "在 IVFertility，每一个成功的故事都是希望、勇气和新起点的象征。我们与您一同走过这段旅程，每一步对我们来说都意义非凡。",
     "heading_highlight": "你正在经历的",
@@ -125,6 +131,9 @@
     "benefitPregnancyCare": "全程孕期管理与关怀"
   },
   "contactPage": {
+    "seoTitle": "联系 IVFertilityGeorgia | 咨询代孕与试管婴儿专家",
+    "seoDescription": "关于格鲁吉亚的代孕、试管婴儿、卵子捐赠或法律流程有疑问？欢迎联系我们经验丰富的团队，获取准确解答、专业指导和免费的一对一咨询。",
+    "ogImageAlt": "在格鲁吉亚生育诊所中，准父母正在接受专业咨询",
     "journeyTitlePart1": "您的成家之路",
     "journeyTitlePart2": "充满可能",
     "journeyDescription": "准备好迈出成为父母的下一步了吗？在 IVFertility，我们始终在您身边为您提供支持。无论您是想了解更多信息、预约咨询，还是只是想聊一聊，我们都乐意在每一个阶段为您提供帮助。",
@@ -133,10 +142,19 @@
     "consultationTitlePart3": "咨询",
     "consultationDescription": "请填写在线表格或致电我们，安排您的首次咨询。"
   },
+  "parentPage": {
+    "seoTitle": "通过格鲁吉亚合法代孕开启您的家庭之路 | IVFertilityGeorgia",
+    "seoDescription": "为国际家庭提供价格合理、合法合规的代孕和卵子捐赠服务。享受专家指导、透明费用和贴心支持，让您的育儿梦想成真。",
+    "ogImageAlt": "在格鲁吉亚完成代孕后抱着新生儿的幸福父母"
+  },
+  "surrogatePage": {
+    "seoTitle": "成为格鲁吉亚的代孕母亲 | IVFertilityGeorgia",
+    "seoDescription": "想成为一名代孕妈妈？欢迎加入我们在格鲁吉亚的合法且支持全面的代孕项目。帮助不孕家庭实现梦想，同时获得全面照护、公平报酬与专业指导。",
+    "ogImageAlt": "在格鲁吉亚接受生育专家支持的幸福代孕妈妈"
+  },
   "prices": {
     "pricingHeadline": "透明灵活的代孕服务价格",
     "pricingDescription": "IVFertility 的代孕方案根据每个家庭的独特需求量身定制。我们承诺价格完全透明，无隐藏费用，并在整个旅程中为您提供全面支持。",
-
     "basicPackageTitle": "基础代孕套餐",
     "basicPackagePrice": "$39,000",
     "basicFeature1": "全面的初步健康筛查，确保代母符合身体条件",
@@ -144,7 +162,6 @@
     "basicFeature3": "拟定并支持所有法律合同，确保各方权益",
     "basicFeature4": "包含一次胚胎移植周期，包括准备和协调",
     "basicFeature5": "妊娠期间持续医学监测，确保每阶段的安全与进展",
-
     "standardPackageTitle": "标准代孕套餐",
     "standardPackagePrice": "$54,000",
     "standardFeature1": "包含基础套餐中的所有服务",
@@ -152,7 +169,6 @@
     "standardFeature3": "每月健康报告，跟踪代母身体状况与妊娠进程",
     "standardFeature4": "整个过程中提供专业心理支持",
     "standardFeature5": "提供机场接送及舒适住宿安排",
-
     "vipPackageTitle": "VIP 代孕套餐",
     "vipPackagePrice": "$72,000",
     "vipFeature1": "包含标准套餐中的所有服务",
@@ -160,16 +176,13 @@
     "vipFeature3": "可选择私立医疗机构服务，保障隐私与舒适",
     "vipFeature4": "妊娠期间提供全面的生活协助和礼宾服务",
     "vipFeature5": "婴儿出生后提供完整的法律与出行支持",
-
     "includedSectionTitle": "我们的价格包含哪些服务？",
     "includedParagraph1": "我们每一个套餐都致力于为您提供情感支持、优质医疗服务、法律保障以及全程引导。不论您是刚刚起步，还是正在继续前行，我们都以信任、透明和个性化服务为核心。",
     "includedParagraph2": "我们相信，每个人都有权轻松地实现成为父母的梦想。这也是我们努力简化流程、解答疑问、并确保整个过程始终清晰透明的原因。",
     "includedParagraph3": "有特殊的医疗或法律需求？我们还提供灵活可定制的服务计划，满足您家庭的个性化需求。",
-
     "trustTagline": "全球家庭为何信赖 IVFertility",
     "trustHeadline": "真诚关怀 · 成果卓越 · 全球信赖",
     "trustParagraph": "来自世界各地的家庭选择 IVFertility，是因为我们出色的成果、透明的价格以及细致入微的个性化支持。我们以满怀热忱和责任感，为无数家庭实现生儿育女的梦想。",
-
     "ctaHeadline": "准备好开启您的家庭旅程了吗？",
     "ctaParagraph": "无论您还在了解阶段，还是已准备迈出下一步，IVFertility 都将陪伴您左右。立即预约免费咨询，开启您的家庭梦想之旅。",
     "ctaButtonLabel": "预约免费咨询"
@@ -179,7 +192,10 @@
     "title2": "问题",
     "paragraph": "每个人通往为人父母的道路都是独特且深刻个人化的。你所做的每一个决定，都是朝着你梦想中的未来迈出的重要一步。"
   },
-  "FAQ": {
+  "faq": {
+    "seoTitle": "代孕与试管婴儿常见问题 | IVFertilityGeorgia",
+    "seoDescription": "了解关于格鲁吉亚代孕、卵子捐赠、试管婴儿治疗、法律规定、费用以及如何开始整个过程的常见问题解答。",
+    "ogImageAlt": "在格鲁吉亚的生育诊所，夫妇正在咨询代孕和试管婴儿相关问题",
     "q1": {
       "question": "在开始代孕流程之前，我可以见到代孕妈妈吗？",
       "answer": "我们诚挚邀请您亲自到访，与我们敬业的团队见面。来访期间，您可以参观我们的现代化设施，与专家面谈，并了解我们如何全程支持您的生育之旅。"

@@ -1,8 +1,6 @@
-"use client";
 import ContactCallToAction from "@/components/contactCallToAction";
 import Accordion from "@/components/contactPage/accordion";
 import Image from "next/image";
-import { useState } from "react";
 import coverPhoto from "../../../../public/assets/images/servicePage-bg.png";
 import { useTranslations } from "next-intl";
 import FaqIntro from "@/components/faqIntro";
@@ -14,8 +12,7 @@ interface IData {
 }
 
 export default function Page() {
-  const [selected, setSelected] = useState<string | null>(null);
-  const t = useTranslations("FAQ");
+  const t = useTranslations("faq");
 
   const data: IData[] = [
     {
@@ -80,11 +77,8 @@ export default function Page() {
     },
   ];
 
-  function handleSingleSelection(getCurrentId: string) {
-    setSelected(getCurrentId === selected ? null : getCurrentId);
-  }
   return (
-    <div>
+    <div className="bg-gray-50">
       <div className="relative w-full aspect-[16/9] max-h-[65vh]">
         <Image
           src={coverPhoto}
@@ -97,11 +91,7 @@ export default function Page() {
         />
       </div>
       <FaqIntro />
-      <Accordion
-        data={data}
-        selected={selected}
-        onSelect={handleSingleSelection}
-      />
+      <Accordion data={data} />
 
       <div className="mt-50">
         <ContactCallToAction />

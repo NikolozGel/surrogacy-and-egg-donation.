@@ -5,10 +5,10 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import "../[locale]/globals.css";
 import { Raleway } from "next/font/google";
-import { Metadata } from "next";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
+import { getTranslations } from "next-intl/server";
 
 const dmSans = Raleway({
   subsets: ["latin"],
@@ -16,50 +16,65 @@ const dmSans = Raleway({
   variable: "--font-dm-sans",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Surrogacy and Egg Donation in Georgia | IVFertility",
-    template: "%s | IVFertility",
-  },
-  description:
-    "Explore trusted surrogacy and egg donation programs in Georgia. IVFertility offers ethical, legally secure, and fully supported paths to parenthood for international intended parents. სუროგაცია საქართველოში უცხოელი მშობლებისთვის — სრული მხარდაჭერა, სამართლებრივი გარანტია და გამოცდილება.",
-  openGraph: {
-    title: "Surrogacy and Egg Donation in Georgia | IVFertility",
-    description:
-      "Ethical and guaranteed surrogacy programs in Georgia. Full support and legal safety for international parents.",
-    url: "https://yourdomain.com",
-    siteName: "IVFertility",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://yourdomain.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Surrogacy in Georgia - IVFertility",
+// ✅ დინამიური SEO metadata ყველა ენაზე
+export async function generateMetadata(
+  input: Promise<{ params: { locale: string } }>
+) {
+  const { params } = await input;
+  console.log("es aris params locale", params.locale);
+
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "homePage",
+  });
+
+  const baseUrl = "https://ivfertilitygeorgia.com";
+  const url = `${baseUrl}/${params.locale}`;
+
+  return {
+    title: {
+      default: t("seoTitle"),
+      template: "%s | IVFertilityGeorgia",
+    },
+    description: t("seoDescription"),
+    openGraph: {
+      title: t("seoTitle"),
+      description: t("seoDescription"),
+      url,
+      siteName: "IVFertilityGeorgia",
+      images: [
+        {
+          url: `${baseUrl}/og/home.jpg`,
+          width: 1200,
+          height: 630,
+          alt: t("ogImageAlt"),
+        },
+      ],
+      locale:
+        params.locale === "ka"
+          ? "ka_GE"
+          : params.locale === "ru"
+          ? "ru_RU"
+          : params.locale === "zh"
+          ? "zh_CN"
+          : "en_US",
+      type: "website",
+    },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${baseUrl}/en`,
+        ka: `${baseUrl}/ka`,
+        ru: `${baseUrl}/ru`,
+        zh: `${baseUrl}/zh`,
       },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Surrogacy and Egg Donation in Georgia | IVFertility",
-    description:
-      "International surrogacy programs in Georgia with full legal and medical support. Begin your journey with IVFertility.",
-    images: ["https://yourdomain.com/og-image.jpg"],
-  },
-  metadataBase: new URL("https://yourdomain.com"),
-  alternates: {
-    canonical: "https://yourdomain.com",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    },
+    robots: {
       index: true,
       follow: true,
     },
-  },
-};
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -68,7 +83,6 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();

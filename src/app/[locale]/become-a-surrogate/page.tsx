@@ -1,18 +1,8 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import SurrogateHeroImage from "../../../../public/assets/images/surrogate-mother.png"; // შეცვალე შესაბამისი სურათით
-import { Modal } from "antd";
-import ModalRegistrationForm from "@/components/modalRegistrationForm";
+import SurrogateHeroImage from "../../../../public/assets/images/surrogate-mother.png";
+import RegisterBtn from "@/components/become-a-surrogate/registerBtn";
 
 export default function BecomeASurrogatePage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
   return (
     <div className="w-full bg-white text-gray-800">
       {/* Hero Section */}
@@ -127,24 +117,7 @@ export default function BecomeASurrogatePage() {
           If you feel ready to start this powerful journey, we&apos;re here to
           walk it with you — every step of the way.
         </p>
-
-        <div className="mt-10 text-center">
-          <button
-            onClick={toggleModal}
-            className="px-6 py-3 bg-[#00AE8A] cursor-pointer hover:opacity-65 text-white font-semibold rounded-full"
-          >
-            Start Your Surrogacy Journey
-          </button>
-        </div>
-        <Modal
-          footer={false}
-          width={700}
-          open={isModalOpen}
-          onOk={() => setIsModalOpen(false)}
-          onCancel={() => setIsModalOpen(false)}
-        >
-          <ModalRegistrationForm />
-        </Modal>
+        <RegisterBtn />
       </section>
     </div>
   );

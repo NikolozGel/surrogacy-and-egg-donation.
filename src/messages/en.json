@@ -1,5 +1,8 @@
 {
   "homePage": {
+    "seoTitle": "Surrogacy & Egg Donation Agency Helping Families Grow | IVFertilityGeorgia",
+    "seoDescription": "Helping dreams of parenthood come true through compassion, trust, and care. Explore IVF, surrogacy, and egg donation in Georgia.",
+    "ogImageAlt": "Happy family after successful surrogacy in Georgia",
     "registrationBtn": "Contact Us To Learn More",
     "topHeaderTitle": "Every journey to parenthood is unique. We’re here for yours",
     "register": "Register Now",
@@ -87,6 +90,9 @@
   },
 
   "aboutPage": {
+    "seoTitle": "About IVFertilityGeorgia | Our Mission and Values",
+    "seoDescription": "Learn more about our compassionate approach to fertility care. Meet our experts and discover how we guide families with ethics, heart, and professionalism.",
+    "ogImageAlt": "Our team supporting intended parents on their fertility journey",
     "heading_line1": "Your Joy Is Our Purpose",
     "paragraph": "At IVFertility, every success story is a symbol of hope, courage, and new beginnings. It's a journey we walk together, and every step holds deep meaning for us.",
     "heading_highlight": "what you're going through",
@@ -126,6 +132,9 @@
     "benefitPregnancyCare": "Comprehensive care throughout pregnancy"
   },
   "contactPage": {
+    "seoTitle": "Contact IVFertilityGeorgia | Talk to a Surrogacy & IVF Expert",
+    "seoDescription": "Do you have questions about surrogacy, IVF, egg donation, or legal procedures in Georgia? Contact our experienced team for clear answers, guidance, and a personal consultation.",
+    "ogImageAlt": "Intended parents receiving a consultation at a fertility clinic in Georgia",
     "journeyTitlePart1": "Your Path",
     "journeyTitlePart2": "to Possibility",
     "journeyDescription": "Ready to advance your fertility journey? At IVFertility, we’re here to support you at every turn. Whether you need more details, wish to set up a consultation, or simply want to have a conversation, we’re ready to assist in any way we can.",
@@ -134,6 +143,17 @@
     "consultationTitlePart3": "Consultation",
     "consultationDescription": "Complete our online form or call us to arrange your initial consultation."
   },
+  "parentPage": {
+    "seoTitle": "Start Your Family with Legal Surrogacy in Georgia | IVFertilityGeorgia",
+    "seoDescription": "Explore affordable, fully legal surrogacy and egg donation programs in Georgia for international parents. Receive expert guidance, transparent pricing, and dedicated support from our caring team.",
+    "ogImageAlt": "Joyful international parents with newborn baby in Georgia after surrogacy journey"
+  },
+  "surrogatePage": {
+    "seoTitle": "Become a Surrogate Mother in Georgia | IVFertilityGeorgia",
+    "seoDescription": "Looking to become a surrogate? Join our legal and supportive surrogacy program in Georgia. Help families struggling with infertility while receiving full care, guidance, and fair compensation.",
+    "ogImageAlt": "Happy surrogate mother supported by fertility experts in Georgia"
+  },
+
   "prices": {
     "pricingHeadline": "Clear and Flexible Surrogacy Pricing",
     "pricingDescription": "Our surrogacy programs are thoughtfully crafted to suit the unique needs of every family. We offer complete transparency, straightforward pricing with no hidden fees, and dedicated support at every stage of your journey.",
@@ -180,7 +200,11 @@
     "title2": "Questions",
     "paragraph": "Every path to parenthood is deeply personal, and every decision you make is a meaningful step toward the future you dream of."
   },
-  "FAQ": {
+  "faq": {
+    "seoTitle": "Surrogacy & IVF FAQs | IVFertilityGeorgia",
+    "seoDescription": "Find answers to the most common questions about surrogacy, egg donation, IVF treatment, legal regulations, costs, and how to start your journey with us in Georgia.",
+    "ogImageAlt": "Couple asking questions about surrogacy and IVF at fertility clinic in Georgia",
+
     "q1": {
       "question": "Can I meet my surrogate partner before the process begins?",
       "answer": "You're warmly invited to visit us and meet our dedicated team. During your visit, you'll have the opportunity to tour our modern facilities, consult with our specialists, and explore how we can support your journey to parenthood."
