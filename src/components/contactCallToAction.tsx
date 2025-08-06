@@ -21,7 +21,7 @@ export default function ContactCallToAction() {
         {t("description")}
       </p>
       <button
-        className="bg-[#10B981] hover:opacity-70 transition-colors duration-200 px-6 py-3 text-white rounded-xl text-sm sm:text-base font-semibold cursor-pointer"
+        className="bg-[#00AE8A] hover:opacity-65 transition-colors duration-200 px-6 py-3 text-white rounded-xl text-sm sm:text-base font-semibold cursor-pointer"
         onClick={toggleModal}
       >
         {t("btn")}

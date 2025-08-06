@@ -1,8 +1,17 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import HappyFamily from "../../../../public/assets/images/family-3.png";
+import { Modal } from "antd";
+import ModalRegistrationForm from "@/components/modalRegistrationForm";
 
 export default function BecomeAParentPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div className="w-full bg-white text-gray-800">
       {/* Hero */}
@@ -135,13 +144,22 @@ export default function BecomeAParentPage() {
           Let us be your guide. Together, we’ll take the first steps toward
           building the family you’ve been dreaming of.
         </p>
-        <Link
-          href="/contact"
-          className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-md hover:bg-blue-700 transition"
+        <button
+          onClick={toggleModal}
+          className="inline-block bg-[#00AE8A] hover:opacity-65 cursor-pointer text-white font-medium px-6 py-3 rounded-md  transition"
         >
           Contact Us
-        </Link>
+        </button>
       </section>
+      <Modal
+        footer={false}
+        width={700}
+        open={isModalOpen}
+        onOk={() => setIsModalOpen(false)}
+        onCancel={() => setIsModalOpen(false)}
+      >
+        <ModalRegistrationForm />
+      </Modal>
     </div>
   );
 }

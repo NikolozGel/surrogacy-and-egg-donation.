@@ -1,4 +1,4 @@
-import { FaArrowDown } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 interface IData {
   id: string;
@@ -30,19 +30,19 @@ export default function Accordion({
               key={item.id}
               onClick={() => onSelect(item.id)}
               className={`w-full border border-gray-200 rounded-lg p-3.5 cursor-pointer transition-all duration-300 ${
-                selected === item.id ? "bg-[#008E8A] text-white" : "bg-white"
+                selected === item.id ? "bg-[#fff] text-gray-700" : "bg-white"
               }`}
             >
               <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-sm sm:text-base lg:text-lg">
+                <h3 className="font-semibold text-gray-700 text-sm sm:text-base lg:text-lg">
                   {item.question}
                 </h3>
-                <FaArrowDown
+                <IoIosArrowDown
                   size={20}
                   className={`transition-transform duration-300 ${
                     selected === item.id
-                      ? "rotate-180 text-white"
-                      : "text-gray-500"
+                      ? "rotate-180 text-gray-700"
+                      : "text-gray-700"
                   }`}
                 />
               </div>
@@ -51,7 +51,7 @@ export default function Accordion({
                   selected === item.id ? "" : "max-h-0"
                 }`}
               >
-                <div>{item.answer}</div>
+                <div className="mt-4">{item.answer}</div>
               </div>
             </div>
           ))}

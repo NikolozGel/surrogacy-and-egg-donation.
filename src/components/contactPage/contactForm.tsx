@@ -98,22 +98,6 @@ export default function ContactForm() {
                 </p>
               )}
             </div>
-
-            {/* <div className="flex flex-col">
-              <label htmlFor="gender">Enter Your Gender</label>
-              <input
-                {...register("gender")}
-                id="gender"
-                type="text"
-                placeholder="Enter your Gender"
-                className="bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00AE8A]"
-              />
-              {errors.gender && (
-                <p className="text-gray-600 text-sm mt-1">
-                  {errors.gender.message}
-                </p>
-              )}
-            </div> */}
           </div>
 
           {/* Right Column */}
@@ -134,22 +118,6 @@ export default function ContactForm() {
               )}
             </div>
 
-            {/* <div className="flex flex-col">
-              <label htmlFor="birth">Date Of Birth</label>
-              <input
-                {...register("birth")}
-                id="birth"
-                type="date"
-                placeholder="Enter Date of Birth"
-                className="bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00AE8A] text-gray-800 w-full"
-              />
-              {errors.birth && (
-                <p className="text-gray-600 text-sm mt-1">
-                  {errors.birth.message}
-                </p>
-              )}
-            </div> */}
-
             <div className="flex flex-col">
               <label htmlFor="country">Country</label>
               <select
@@ -166,7 +134,6 @@ export default function ContactForm() {
                     {country}
                   </option>
                 ))}
-                {/* შეგიძლია დაამატო მეტი ქვეყანა ან ცალკე array-დან გააკეთო map() */}
               </select>
               {errors.country && (
                 <p className="text-gray-600 text-sm mt-1">
@@ -193,7 +160,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="self-start px-6 py-2 bg-[#00AE8A] text-white rounded-lg hover:bg-[#008E8A] transition"
+          className="self-start px-6 py-2 bg-[#00AE8A] hover:opacity-65 text-white rounded-lg  cursor-pointer"
         >
           Send
         </button>
