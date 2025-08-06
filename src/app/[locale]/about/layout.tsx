@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Record<string, string>;
 }): Promise<Metadata> {
   const t = await getTranslations({
     locale: params.locale,

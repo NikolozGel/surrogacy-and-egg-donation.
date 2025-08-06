@@ -47,7 +47,6 @@ export default function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     if (!isValid) return;
-    console.log(data);
 
     try {
       await axios.post("/api/monday", data);

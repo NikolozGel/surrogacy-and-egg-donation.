@@ -8,7 +8,40 @@ import { Raleway } from "next/font/google";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
-// import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "IVFertilityGeorgia",
+    template: "%s | IVFertilityGeorgia",
+  },
+  description:
+    "Helping you become a parent with compassion, care, and science.",
+  openGraph: {
+    title: "IVFertilityGeorgia",
+    description:
+      "Helping you become a parent with compassion, care, and science.",
+    url: "https://ivfertilitygeorgia.com",
+    siteName: "IVFertilityGeorgia",
+    images: [
+      {
+        url: "https://ivfertilitygeorgia.com/og/home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Happy family after surrogacy",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://ivfertilitygeorgia.com",
+  },
+};
 
 const dmSans = Raleway({
   subsets: ["latin"],
