@@ -38,7 +38,7 @@ export default function Slider() {
               fill
               className="object-cover"
               sizes="100vw"
-              priority
+              priority={true}
               unoptimized
             />
           </div>

@@ -84,9 +84,10 @@ export default function Page() {
           src={coverPhoto}
           alt="coverImage"
           fill
+          quality={100}
           className="object-cover"
           sizes="100vw"
-          priority
+          priority={true}
           unoptimized
         />
       </div>

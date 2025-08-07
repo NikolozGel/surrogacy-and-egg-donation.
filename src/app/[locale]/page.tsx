@@ -8,11 +8,9 @@ import ContactCallToAction from "@/components/contactCallToAction";
 import { getTranslations } from "next-intl/server";
 
 // ✅ 1. ლოკალიზებული Metadata-ის გენერაცია
-export async function generateMetadata(
-  props: {
-    params: Promise<{ locale: string }>;
-  }
-) {
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
   const params = await props.params;
   const t = await getTranslations({
     locale: params.locale,

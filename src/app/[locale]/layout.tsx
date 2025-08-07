@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import "../[locale]/globals.css";
-import { Raleway } from "next/font/google";
+import { Titillium_Web } from "next/font/google";
 import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
@@ -43,70 +43,11 @@ export const metadata: Metadata = {
   },
 };
 
-const dmSans = Raleway({
+const dmSans = Titillium_Web({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "600"],
   style: ["normal"],
 });
-
-// ✅ დინამიური SEO metadata ყველა ენაზე
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: { locale: string };
-// }) {
-//   const t = await getTranslations({
-//     locale: params.locale,
-//     namespace: "homePage",
-//   });
-
-//   const baseUrl = "https://ivfertilitygeorgia.com";
-//   const url = `${baseUrl}/${params.locale}`;
-
-//   return {
-//     title: {
-//       default: t("seoTitle"),
-//       template: "%s | IVFertilityGeorgia",
-//     },
-//     description: t("seoDescription"),
-//     openGraph: {
-//       title: t("seoTitle"),
-//       description: t("seoDescription"),
-//       url,
-//       siteName: "IVFertilityGeorgia",
-//       images: [
-//         {
-//           url: `${baseUrl}/og/home.jpg`,
-//           width: 1200,
-//           height: 630,
-//           alt: t("ogImageAlt"),
-//         },
-//       ],
-//       locale:
-//         params.locale === "ka"
-//           ? "ka_GE"
-//           : params.locale === "ru"
-//           ? "ru_RU"
-//           : params.locale === "zh"
-//           ? "zh_CN"
-//           : "en_US",
-//       type: "website",
-//     },
-//     alternates: {
-//       canonical: url,
-//       languages: {
-//         en: `${baseUrl}/en`,
-//         ka: `${baseUrl}/ka`,
-//         ru: `${baseUrl}/ru`,
-//         zh: `${baseUrl}/zh`,
-//       },
-//     },
-//     robots: {
-//       index: true,
-//       follow: true,
-//     },
-//   };
-// }
 
 export default async function LocaleLayout({
   children,
