@@ -6,7 +6,7 @@ export default function BecomeASurrogatePage() {
   return (
     <div className="w-full bg-white text-gray-800">
       {/* Hero Section */}
-      <section className="relative w-full aspect-[16/9] max-h-[65vh] flex items-center justify-center">
+      <section className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh] overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
             src={SurrogateHeroImage} // <== აქ ჩასვი შენი cover ფოტო

@@ -16,11 +16,11 @@ export default function Header() {
   };
 
   return (
-    <header className="mt-2 mb-3">
+    <header className="my-2">
       <nav className="relative">
         <div className="flex justify-between lg:justify-evenly px-5">
           <Link href="/">
-            <p className="text-4xl font-semibold text-teal-900">IVFertility</p>
+            <p className="text-4xl font-bold text-teal-900">IVFertility</p>
           </Link>
           <DesktopNavigationMenu />
           <RxHamburgerMenu

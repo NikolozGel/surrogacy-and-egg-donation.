@@ -1,10 +1,11 @@
 "use client";
 import { Carousel } from "antd";
 import Image from "next/image";
+import baby from "../../public/assets/images/baby-1.jpg";
 
 const images = [
   {
-    src: "/assets/carousel/baby-child.jpg",
+    src: baby,
     alt: "Description of happy-parents",
   },
   {
@@ -29,17 +30,17 @@ export default function Slider() {
       >
         {images.map((image, index) => (
           <div
-            className="relative w-full aspect-[16/9] max-h-[65vh]"
+            className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh] overflow-hidden"
             key={index}
           >
             <Image
               src={image.src}
               alt={image.alt}
               fill
+              quality={100}
               className="object-cover"
               sizes="100vw"
-              priority={true}
-              unoptimized
+              priority={index === 0}
             />
           </div>
         ))}

@@ -10,7 +10,7 @@ export default function DesktopNavigationMenu() {
       <li className="relative">
         <Link
           href={`/${locale}/`}
-          className="block w-full h-full p-2 text-xl text-gray-700 font-medium transition duration-200"
+          className="block w-full h-full p-2 text-2xl text-gray-600 transition duration-200"
         >
           {t("home")}
         </Link>
@@ -18,7 +18,7 @@ export default function DesktopNavigationMenu() {
       <li className="relative">
         <Link
           href={`/${locale}/about`}
-          className="block w-full h-full p-2 text-xl text-gray-700 font-medium transition duration-200"
+          className="block w-full h-full p-2 text-2xl text-gray-600 transition duration-200"
         >
           {t("about")}
         </Link>
@@ -26,7 +26,7 @@ export default function DesktopNavigationMenu() {
       <li className="relative">
         <Link
           href={`/${locale}/contact`}
-          className="block w-full h-full p-2 text-xl text-gray-700 font-medium transition duration-200"
+          className="block w-full h-full p-2 text-2xl text-gray-600 transition duration-200"
         >
           {t("contact")}
         </Link>
@@ -34,7 +34,7 @@ export default function DesktopNavigationMenu() {
       <li className="relative">
         <Link
           href={`/${locale}/prices`}
-          className="block w-full h-full p-2 text-xl text-gray-700 font-medium transition duration-200"
+          className="block w-full h-full p-2 text-2xl text-gray-600 transition duration-200"
         >
           {t("prices")}
         </Link>
@@ -42,7 +42,7 @@ export default function DesktopNavigationMenu() {
       <li className="relative">
         <Link
           href={`/${locale}/faq`}
-          className="block w-full h-full p-2 text-xl text-gray-700 font-medium transition duration-200"
+          className="block w-full h-full p-2 text-2xl text-gray-600 transition duration-200"
         >
           {t("faq")}
         </Link>

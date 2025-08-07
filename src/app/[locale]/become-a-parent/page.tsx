@@ -6,7 +6,7 @@ export default function BecomeAParentPage() {
   return (
     <div className="w-full bg-white text-gray-800">
       {/* Hero */}
-      <section className="relative w-full aspect-[16/9] max-h-[65vh] flex items-center justify-center">
+      <section className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={HappyFamily}
