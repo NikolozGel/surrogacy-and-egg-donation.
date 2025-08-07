@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
 
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 hover:text-[#00AE8A]">
             <HiOutlineDevicePhoneMobile size={20} />
             <a href="tel:+995511106081" className="hover:underline">
               +995551106081
@@ -27,11 +27,11 @@ export default function Footer() {
           <Link
             target="_blank"
             href="https://www.google.com/maps/place/PERSONA+CLINIC+%E2%80%A2+%E1%83%99%E1%83%9A%E1%83%98%E1%83%9C%E1%83%98%E1%83%99%E1%83%90+%E1%83%9E%E1%83%94%E1%83%A0%E1%83%A1%E1%83%9D%E1%83%9C%E1%83%90/@41.7800495,44.7787692,17z/data=!3m1!4b1!4m6!3m5!1s0x40446d0021f2cd13:0xdff06b1fe228cd84!8m2!3d41.7800495!4d44.7813441!16s%2Fg%2F11mdv6bhlh?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 hover:text-[#00AE8A]"
           >
             <SlLocationPin size={20} /> Tbilisi, Georgia. Bokhuas #3
           </Link>
-          <p>
+          <p className="hover:text-[#00AE8A]">
             <a href="mailto:info@surrodonate.com" className="hover:underline">
               personaSurrogacy@gmail.com
             </a>
@@ -41,17 +41,17 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li>
+            <li className="hover:text-[#00AE8A]">
               <Link href={`/${locale}/`} className="hover:underline">
                 Home
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#00AE8A]">
               <Link href={`/${locale}/about`} className="hover:underline">
                 About Us
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#00AE8A]">
               <Link
                 href={`/${locale}/become-a-surrogate`}
                 className="hover:underline"
@@ -59,7 +59,7 @@ export default function Footer() {
                 Become a Surrogate
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#00AE8A]">
               <Link
                 href={`/${locale}/become-a-parent`}
                 className="hover:underline"
@@ -67,7 +67,7 @@ export default function Footer() {
                 Become a parent
               </Link>
             </li>
-            <li>
+            <li className="hover:text-[#00AE8A]">
               <Link href={`/${locale}/faq`} className="hover:underline">
                 FAQ
               </Link>

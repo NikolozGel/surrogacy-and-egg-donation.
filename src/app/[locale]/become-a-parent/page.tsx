@@ -6,7 +6,7 @@ export default function BecomeAParentPage() {
   return (
     <div className="w-full bg-white text-gray-800">
       {/* Hero */}
-      <section className="relative w-full aspect-[4/5] max-h-[65vh] flex items-center justify-center">
+      <section className="relative w-full aspect-[16/9] max-h-[65vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
             src={HappyFamily}
@@ -17,7 +17,7 @@ export default function BecomeAParentPage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute top-60 md:top-50 lg:top-20 inset-0 flex items-center justify-center lg:justify-end px-5">
+        <div className="absolute top-52 md:top-50 lg:top-20 inset-0 flex items-center justify-center lg:justify-end px-5">
           <div className="max-w-2xl text-white backdrop-blur-md bg-black/40 rounded-xl p-2">
             <p className="text-sm md:text-lg lg:text-xl">
               Your dream of becoming a parent starts here with expert care, deep
