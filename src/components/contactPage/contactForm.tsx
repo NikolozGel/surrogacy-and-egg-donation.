@@ -49,7 +49,7 @@ export default function ContactForm() {
     if (!isValid) return;
 
     try {
-      await axios.post("/api/monday", data);
+      await axios.post("/api/contact", data);
       setSuccessMessage(true);
       reset();
     } catch (err) {

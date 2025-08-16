@@ -2,6 +2,7 @@
 import { Carousel } from "antd";
 import Image from "next/image";
 import baby from "../../public/assets/images/baby-1.jpg";
+import family from "../../public/assets/carousel/baby-2416718_1280.jpg";
 
 const images = [
   {
@@ -9,7 +10,7 @@ const images = [
     alt: "Description of happy-parents",
   },
   {
-    src: "/assets/carousel/baby-2416718_1280.jpg",
+    src: family,
     alt: "Description of family-play",
   },
 ];

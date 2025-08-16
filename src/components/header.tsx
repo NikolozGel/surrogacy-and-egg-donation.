@@ -9,17 +9,24 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+
   const handleHamburgerMenuChange = () => {
     if (isAnimating) return;
     setIsAnimating(true);
     setIsMenuOpen((prev) => !prev);
   };
 
+  const handleCloseMenu = () => {
+    if (isAnimating) return;
+    // setIsAnimating(true);
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="my-2">
       <nav className="relative">
         <div className="flex justify-between lg:justify-evenly px-5">
-          <Link href="/">
+          <Link href="/" onClick={handleCloseMenu}>
             <p className="text-4xl font-bold text-teal-900">IVFertility</p>
           </Link>
           <DesktopNavigationMenu />
