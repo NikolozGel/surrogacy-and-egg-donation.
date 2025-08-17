@@ -64,15 +64,6 @@ export default function ModalRegistrationForm() {
         <p className="mt-2 text-gray-700 text-sm md:text-lg">
           {t("paragraph2")}
         </p>
-        {/* <p className="mt-2 text-gray-700 text-sm md:text-lg">
-          {t("paragraph3")}
-        </p> */}
-        {/* <p className="mt-2 text-gray-700 text-sm md:text-lg">
-          {t("paragraph4")}
-        </p>
-        <p className="mt-2 text-gray-700 text-sm md:text-lg">
-          {t("paragraph5")}
-        </p> */}
       </div>
 
       {successMessage ? (
