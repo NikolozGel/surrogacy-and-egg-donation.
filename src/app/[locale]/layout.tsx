@@ -34,13 +34,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: "https://ivfertilitygeorgia.com",
-  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://ivfertilitygeorgia.com" },
 };
 
 const dmSans = Titillium_Web({
@@ -57,13 +52,28 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
     <html lang={locale}>
-      <body className={`${dmSans.className}`}>
+      <head>
+        {/* Google tag (gtag.js) — raw script so Setup Assistant surely detects it */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XQDBP3DL6N"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XQDBP3DL6N');
+            `,
+          }}
+        />
+      </head>
+      <body className={dmSans.className}>
         <NextIntlClientProvider>
           <Header />
           {children}

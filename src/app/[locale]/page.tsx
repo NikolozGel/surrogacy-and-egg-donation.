@@ -65,13 +65,13 @@ export async function generateMetadata(props: {
 // ✅ 2. გვერდის კომპონენტი უცვლელი რჩება
 const images = [
   {
-    url: "/assets/doctors/laliko.jpg",
+    url: "/assets/clinic/zizi.JPG",
     title: "title-2",
     subtitle: "subtitle-2",
     description: "description-2",
   },
   {
-    url: "/assets/clinic/zizi.JPG",
+    url: "/assets/doctors/laliko.jpg",
     title: "title",
     subtitle: "subtitle",
     description: "description",

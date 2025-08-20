@@ -47,7 +47,7 @@ export default function DesktopNavigationMenu() {
           {t("faq")}
         </Link>
       </li>
-      <li className="relative z-50">
+      <li className="relative top-1 z-50">
         <LocalSwitcher />
       </li>
     </ul>
