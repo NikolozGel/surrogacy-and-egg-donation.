@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -58,10 +59,10 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         {/* Google tag (gtag.js) — raw script so Setup Assistant surely detects it */}
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XQDBP3DL6N"
-        ></script>
+        ></Script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
