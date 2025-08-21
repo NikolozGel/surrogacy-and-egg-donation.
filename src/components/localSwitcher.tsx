@@ -2,14 +2,14 @@ import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import Image from "next/image";
-import georgianLogo from "../../public/assets/language-logos/georgian-logo.png";
+// import georgianLogo from "../../public/assets/language-logos/georgian-logo.png";
 import englishLogo from "../../public/assets/language-logos/en.svg";
 import russianLogo from "../../public/assets/language-logos/ru.svg";
 import chineseLogo from "../../public/assets/language-logos/zh-CN.svg";
 
 const localeLogos = [
   { locale: "en", logo: englishLogo, name: "EN" },
-  { locale: "ka", logo: georgianLogo, name: "KA" },
+  // { locale: "ka", logo: georgianLogo, name: "KA" },
   { locale: "ru", logo: russianLogo, name: "RU" },
   { locale: "zh", logo: chineseLogo, name: "CN" },
 ];

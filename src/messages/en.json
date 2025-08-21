@@ -37,21 +37,21 @@
   "homeAccordionFaq": {
     "title": "Do you have any",
     "title-highlight": "questions?",
-    "description": "Whether you're exploring IVF, considering fertility surgery, or navigating third-party reproduction, we offer a full range of services tailored to support you every step of the way. Your journey to parenthood starts right here. Reach out to IVFertility — together, we can make your dream of becoming a parent a reality.",
-    "fAQTitle": "Have more questions? Feel free to contact us or explore our FAQ page.",
+    "description": "Whether you are thinking about IVF, considering fertility surgery, or planning surrogacy and egg donation, we provide complete services to support you at every stage. Your journey to parenthood begins here with IVFertilityGeorgia. Contact us and together we will turn your dream of becoming a parent into reality.",
+    "fAQTitle": "Still have questions? You can contact us directly or explore our FAQ page for clear answers.",
     "FAQContactBtn": "Contact Us",
     "FAQPageBtn": "See FAQs",
     "q1": {
       "question": "How long does the entire surrogacy process usually take, from the very beginning until I hold my baby?",
-      "answer": "Typically, the full surrogacy journey takes between 12 to 18 months. This timeline includes finding the right surrogate, completing all medical and psychological screenings, signing legal agreements, going through embryo transfer, and, of course, the full term of pregnancy. Every journey is unique, but we’re here to guide you through each step with care and clarity."
+      "answer": "On average, the surrogacy process takes about 12 to 18 months. This includes matching with the right surrogate, completing medical and psychological screenings, signing legal agreements, undergoing embryo transfer, and then the pregnancy itself. Every journey is unique, but we guide you step by step to make the process clear and reassuring."
     },
     "q2": {
-      "question": "I'm single — is it still possible for me to become a parent through your program?",
-      "answer": "Absolutely. In Georgia, both single men and single women are welcome to pursue parenthood through surrogacy or egg donation. We support individuals and couples from all walks of life, and we’ll work with you to create a personalized plan that fits your situation."
+      "question": "I'm single, is it still possible for me to become a parent through your program?",
+      "answer": "Yes, it is possible. In Georgia, both single men and single women are welcome to become parents through surrogacy or egg donation. We support individuals as well as couples and create a plan that fits your personal situation with respect and care."
     },
     "q3": {
-      "question": "I’m ready to begin — what should be my first step?",
-      "answer": "That’s great to hear! The first step is to book a consultation with our expert team. During this meeting, we’ll get to know you, explain your options in detail, and help map out your journey — whether you're interested in surrogacy, egg donation, or another path to parenthood."
+      "question": "I’m ready to begin, what should be my first step?",
+      "answer": "The first step is to book a consultation with our specialists. In this meeting we will listen to your story, explain your options in detail, and guide you through the process. Together we will design a plan that matches your goals, whether that is surrogacy, egg donation, or another treatment. This first conversation starts your journey to parenthood."
     }
   },
   "contactCallToAction": {
@@ -60,33 +60,33 @@
     "btn": "Book a consultation"
   },
   "introSection": {
-    "title": "What",
-    "subtitle": "We Offer",
-    "description": "Our mission is to walk alongside you at every step of your journey — from the first consultation to the moment you hold your baby in your arms. With genuine care, ethical guidance, and transparent support, our trusted professionals ensure your experience is safe, stable, and truly supportive.",
+    "title": "What We Offer",
+    "subtitle": "",
+    "description": "At IVFertilityGeorgia we support you through every stage of your journey. From the very first consultation until the moment you welcome your baby, our role is to guide you with honesty, care and clear communication. We know this journey is very important and sometimes challenging, which is why we make sure that you always feel safe, supported and respected.",
     "secTitle": "Reproductive Surgery",
-    "description2": "In some cases, the causes of infertility can be addressed through minor surgical procedures. Our skilled surgical team specializes in minimally invasive treatments — including the removal of fibroids, treatment of endometriosis, or unblocking fallopian tubes — all of which can significantly improve your chances of a successful pregnancy.",
+    "description2": "In some situations, infertility can be improved with small surgical procedures. Our experienced doctors specialize in gentle, minimally invasive treatments that help increase your chances of pregnancy. These include removing fibroids, treating endometriosis and opening blocked fallopian tubes. Each procedure is carried out with care and precision to give you the best possible outcome.",
     "thirdTitle": "Fertility Preservation",
-    "thirdDescription": "Whether prompted by medical reasons or personal life plans, preserving your fertility is an important step. We offer egg, sperm, and embryo freezing services, giving you the freedom and flexibility to plan your future with confidence and peace of mind.",
+    "thirdDescription": "Sometimes life or medical conditions make it necessary to think about the future. Fertility preservation allows you to plan ahead with confidence. We offer safe freezing of eggs, sperm and embryos, giving you the freedom to choose the right time for parenthood while protecting your chance of having children later in life.",
     "fourthTitle": "Surrogacy Services",
-    "fourthDescription": "We proudly support all types of intended parents on their path to parenthood through surrogacy. Our ethical, transparent process is guided by experienced legal and medical professionals, ensuring clarity, protection, and compassionate support at every stage."
+    "fourthDescription": "For many families, surrogacy is the path that makes parenthood possible. At IVFertilityGeorgia we welcome intended parents from around the world and provide full guidance through every step. Our process is transparent and built on legal and medical expertise. Most importantly, it is filled with care and respect for all involved — parents, surrogates and donors. Your dream of family becomes our shared mission."
   },
   "surrogacyOptions": {
-    "title": "Empowering Your Path to Parenthood",
-    "description": "At IVFertility, we believe that every path to parenthood is unique — and every journey deserves compassion, respect, and options. We’re here to support you with flexible, personalized surrogacy solutions designed around your needs and dreams. With a strong focus on trust and care, our mission is to help you build the family you’ve always hoped for.",
-    "button": "Book an Appointment"
+    "title": "Your Journey to Parenthood Starts Here",
+    "description": "At IVFertilityGeorgia we know that every family’s story is different. That’s why we take the time to truly listen and support you with compassion, care, and honesty. Whether you are beginning your surrogacy journey or exploring egg donation, our dedicated team will stand by your side, making the process clear, safe, and filled with hope. Our greatest goal is to help you welcome the child you’ve always dreamed of.",
+    "button": "Start Your Journey"
   },
   "ourMission": {
     "title": "What Makes Us",
     "subtitle": "Truly Exceptional",
-    "description": "Our mission is to provide every family with care rooted in the highest ethical standards and complete transparency. This is how we create a safe, calm, and trustworthy environment, where every step is well-considered and reliable.",
-    "h3Title": "Comprehensive Support Every Step of the Way",
-    "h3Description": "From IVF treatments and reproductive surgery to full-service surrogacy — we offer holistic, personalized solutions tailored to your needs. Your path to parenthood begins here. Connect with IVFertility and let’s make your dream a reality, together.",
-    "h4": "Innovative Technology for Your Success",
-    "h4Description": "Through the use of advanced technologies and modern methods, we deliver treatment that is focused on results and increase the chances of success.",
-    "h5": "A Personalized Approach to Every Journey",
-    "h5Description": "We value the uniqueness of every individual. That’s why we create custom-tailored treatment plans — as distinctive as each person we serve.",
-    "h6": "Ethics and Transparency at Every Stage",
-    "h6Description": "Trust is our core value. We respect every patient’s beliefs and ensure that every process is carried out with openness, integrity, and sincerity."
+    "description": "Our mission is to give every family clear information, ethical care and full transparency. We create a safe and calm environment where each step is explained, documented and delivered by trusted professionals. You always know what happens next and why.",
+    "h3Title": "Comprehensive Support Every Step",
+    "h3Description": "We offer a full pathway that includes fertility assessment, IVF care, reproductive surgery when needed, donor programs for eggs and sperm and complete surrogacy services. You receive legal guidance, medical coordination and after birth support in one place. Your path to parenthood starts here. Contact IVFertilityGeorgia and we will walk it with you.",
+    "h4": "Innovative Technology For Your Success",
+    "h4Description": "We use up to date methods and modern laboratories to improve outcomes. Our team follows evidence based protocols, performs careful monitoring and provides clear reports. Every decision is made with data and your informed consent.",
+    "h5": "Personalized Care For Every Journey",
+    "h5Description": "Every person is unique. We design a plan around your goals, health and timeline. A personal coordinator keeps you informed, sets clear expectations and helps you make confident choices.",
+    "h6": "Ethics And Transparency At Every Stage",
+    "h6Description": "Trust is our core value. We respect your beliefs and protect your privacy. Costs, timelines and responsibilities are open and written in plain language. You receive regular updates and complete records at every stage."
   },
 
   "aboutPage": {
@@ -97,12 +97,12 @@
     "paragraph": "At IVFertility, every success story is a symbol of hope, courage, and new beginnings. It's a journey we walk together, and every step holds deep meaning for us.",
     "heading_highlight": "what you're going through",
     "successStory": "Success Story",
-    "title": "Zizi",
+    "title": "Lali",
     "subtitle": "Doctor",
-    "description": "Surrogacy is a unique and heartfelt path to building families for those who are unable to have children on their own. This process involves a compassionate and responsible woman who is willing to help individuals and couples realize their dream of parenthood. Surrogacy is not only a medical achievement but also a deeply human act that brings hope and joy to new families. Dr. Zeinab offers a reliable and safe environment, complete support, and professional care to ensure that every surrogacy journey ends successfully and with love.",
-    "title-2": "Lali",
+    "description": "Surrogacy is a very special and deeply human way of helping families who cannot have children on their own. It is made possible thanks to compassionate and responsible women who are willing to give the priceless gift of parenthood to others. Surrogacy is not only a medical process but also an act of kindness, hope and love that creates new families. Dr. Zizi provides a safe and reliable environment, full professional care and constant support, so that every surrogacy journey can end with health, joy and success.",
+    "title-2": "Zizi",
     "subtitle-2": "Reproductologist",
-    "description-2": "Reproductive medicine is a remarkable field of healthcare dedicated to fulfilling the dream of starting a family. It’s deeply intertwined with emotions, responsibility, and the highest level of professionalism. Being a specialist in this area requires not only scientific expertise but also a profound understanding of people. Laliko wholeheartedly supports couples navigating the challenging journey to parenthood. Her mission goes beyond medical care—it includes psychological support and emotional guidance. Every consultation is filled with genuine care, warmth, and hope, giving each patient the chance to begin their unique story of happiness.",
+    "description-2": "Reproductive medicine is a field devoted to helping people achieve their dream of having a family. It combines science with responsibility, compassion and professionalism. A reproductologist must not only have medical expertise but also understand the emotions, challenges and hopes of every patient. Dr. Lali supports couples with dedication and empathy throughout the difficulties of infertility. Her mission goes beyond treatment — she also provides psychological care, clear guidance and emotional support. Every consultation is filled with kindness, warmth and hope, giving patients the strength and confidence to continue their journey toward parenthood.",
     "title-3": "At IVFertility, we believe in the",
     "highlight": "power of choice",
     "paragraph1": "At IVFertility, we believe in the power of choice. The journey to parenthood is a deeply personal and unique experience for every individual and couple. That’s why we are dedicated to offering a wide range of personalized solutions. We are committed to providing diverse, flexible pathways that support you in achieving your dream of building a family.",

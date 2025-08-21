@@ -13,7 +13,7 @@ export default function ContactCallToAction() {
     setIsModalOpen(!isModalOpen);
   };
   return (
-    <div className="bg-[#eee] px-5 sm:px-10 py-8 text-center mt-10 mb-20">
+    <div className="bg-[#eee] px-5 sm:px-10 py-8 text-center mt-20">
       <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-gray-700 mb-4 leading-snug">
         {t("title")}
       </h3>

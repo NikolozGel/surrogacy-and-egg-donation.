@@ -45,34 +45,33 @@ const dmSans = Titillium_Web({
   style: ["normal"],
 });
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string }; // ✅ აღარ არის Promise
 }) {
-  const { locale } = await params;
+  const { locale } = params; // ✅ აღარ ველოდებით await-ს
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
     <html lang={locale}>
       <head>
-        {/* Google tag (gtag.js) — raw script so Setup Assistant surely detects it */}
+        {/* Google tag (gtag.js) */}
         <Script
+          id="ga-loader"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XQDBP3DL6N"
-        ></Script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XQDBP3DL6N');
-            `,
-          }}
         />
+        <Script id="ga-inline" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XQDBP3DL6N');
+          `}
+        </Script>
       </head>
       <body className={dmSans.className}>
         <NextIntlClientProvider>
