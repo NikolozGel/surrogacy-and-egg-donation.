@@ -119,21 +119,11 @@ export default function ContactForm() {
 
             <div className="flex flex-col">
               <label htmlFor="country">Country</label>
-              <select
-                {...register("country")}
-                id="country"
-                className="bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00AE8A] text-gray-800 w-full"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Select a country
-                </option>
-                {countries.map((country) => (
-                  <option key={country} value={country}>
-                    {country}
-                  </option>
-                ))}
-              </select>
+              <input
+                type="text"
+                placeholder="Your Country"
+                className="bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00AE8A]"
+              />
               {errors.country && (
                 <p className="text-gray-600 text-sm mt-1">
                   {errors.country.message}
@@ -173,17 +163,17 @@ export default function ContactForm() {
     </div>
   );
 }
-const countries = [
-  "United States",
-  "United Kingdom",
-  "Germany",
-  "France",
-  "Georgia",
-  "India",
-  "China",
-  "Japan",
-  "Italy",
-  "Spain",
-  "Canada",
-  "Australia",
-];
+// const countries = [
+//   "United States",
+//   "United Kingdom",
+//   "Germany",
+//   "France",
+//   "Georgia",
+//   "India",
+//   "China",
+//   "Japan",
+//   "Italy",
+//   "Spain",
+//   "Canada",
+//   "Australia",
+// ];

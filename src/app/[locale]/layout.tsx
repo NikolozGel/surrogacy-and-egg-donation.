@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
 import type { Metadata } from "next";
-import Script from "next/script";
+// import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -45,34 +45,18 @@ const dmSans = Titillium_Web({
   style: ["normal"],
 });
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { locale: string }; // ✅ აღარ არის Promise
 }) {
-  const { locale } = params; // ✅ აღარ ველოდებით await-ს
+  const { locale } = await params; // ✅ აღარ ველოდებით await-ს
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
     <html lang={locale}>
-      <head>
-        {/* Google tag (gtag.js) */}
-        <Script
-          id="ga-loader"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XQDBP3DL6N"
-        />
-        <Script id="ga-inline" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XQDBP3DL6N');
-          `}
-        </Script>
-      </head>
       <body className={dmSans.className}>
         <NextIntlClientProvider>
           <Header />

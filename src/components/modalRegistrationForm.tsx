@@ -21,6 +21,7 @@ const schema = yup.object().shape({
     .string()
     .required("Text is required")
     .min(3, "Text must be at least 3 characters"),
+  country: yup.string().required("Country is required"),
 });
 
 type FormData = yup.InferType<typeof schema>;
@@ -70,6 +71,7 @@ export default function ModalRegistrationForm() {
         <h3 className="text-center text-lg text-green-600">{successMessage}</h3>
       ) : (
         <form className="flex flex-col gap-5" onSubmit={handleSubmit(onSubmit)}>
+          {/* name input */}
           <div>
             {errors.name && (
               <p className="text-gray-600 text-md mt-1">
@@ -82,7 +84,7 @@ export default function ModalRegistrationForm() {
               className="p-3 border border-gray-300 rounded-sm outline-none w-full"
             />
           </div>
-
+          {/* email input */}
           <div>
             {errors.email && (
               <p className="text-gray-600 text-md mt-1">
@@ -95,7 +97,7 @@ export default function ModalRegistrationForm() {
               className="p-3 border border-gray-300 rounded-sm outline-none w-full"
             />
           </div>
-
+          {/* phone input */}
           <div>
             {errors.phone && (
               <p className="text-gray-600 text-md mt-1">
@@ -108,7 +110,20 @@ export default function ModalRegistrationForm() {
               className="p-3 border border-gray-300 rounded-sm outline-none w-full"
             />
           </div>
-
+          {/* country input */}
+          <div>
+            {errors.country && (
+              <p className="text-gray-600 text-md mt-1">
+                {errors.country.message}
+              </p>
+            )}
+            <input
+              {...register("country")}
+              placeholder="Your Country"
+              className="p-3 border border-gray-300 rounded-sm outline-none w-full"
+            />
+          </div>
+          {/* text input */}
           <div>
             {errors.text && (
               <p className="text-gray-600 text-md mt-1">
@@ -121,7 +136,7 @@ export default function ModalRegistrationForm() {
               className="p-3 border border-gray-300 rounded-sm outline-none w-full"
             />
           </div>
-
+          {/* submit button */}
           <div className="flex justify-end">
             <button
               type="submit"

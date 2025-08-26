@@ -2,6 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { getDb } from "@/lib/mongodb";
+import { count } from "console";
 // import nodemailer from "nodemailer";
 
 export const runtime = "nodejs";
@@ -11,6 +12,7 @@ const contactSchema = z.object({
   email: z.string().email(),
   phone: z.string().min(6).max(30), // სურვილისათბის: .regex(/^\+?[0-9\-()\s]+$/)
   text: z.string().min(3).max(2000),
+  country: z.string().min(2).max(100),
 });
 
 export async function POST(req: NextRequest) {
