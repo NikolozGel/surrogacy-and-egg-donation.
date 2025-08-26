@@ -2,7 +2,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { getDb } from "@/lib/mongodb";
-import { count } from "console";
 // import nodemailer from "nodemailer";
 
 export const runtime = "nodejs";
