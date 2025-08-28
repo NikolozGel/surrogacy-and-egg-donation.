@@ -14,15 +14,14 @@ export default function SurrogacyAndEggDonationOptions() {
   const t = useTranslations("surrogacyOptions");
 
   return (
-    <div className="px-5 md:px-20 mt-8 lg:mt-0 mb-30 lg:absolute lg:bottom-0 lg:left-20 lg:max-w-7xl lg:mx-auto ">
+    <div className="px-5 md:px-20 absolute bottom-10 md:bottom-30 lg:bottom-40 left-0  md:left-10 lg:left-20 max-w-7xl mx-auto ">
       <div className="flex flex-col gap-5">
-        <h2 className="text-3xl font-bold lg:text-white">{t("title")}</h2>
-        <p className="text-gray-700 lg:text-white  lg:mr-30">
-          {t("description")}
-        </p>
+        <h2 className="text-md lg:text-4xl font-bold text-white bg-black/20 p-4">
+          {t("title")}
+        </h2>
         <div>
           <button
-            className="p-2 sm:p-3 rounded-xl bg-[#00AE8A] hover:opacity-65 text-white cursor-pointer text-lg font-semibold"
+            className="p-2 sm:p-3.5 rounded-xl bg-[#00AE8A] hover:opacity-65 text-white cursor-pointer text-md lg:text-2xl font-semibold"
             onClick={toggleModal}
           >
             {t("button")}

@@ -56,13 +56,13 @@ export default function ModalRegistrationForm() {
     <div className="mt-5">
       {/* ✅ Preserving original text content */}
       <div className="mb-4 p-4">
-        <h2 className="text-lg md:text-2xl font-semibold text-gray-700">
+        <h2 className="text-lg md:text-2xl font-semibold text-[#00AE8A]">
           {t("headline")}
         </h2>
-        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+        <p className="mt-2 text-gray-500 text-sm md:text-lg">
           {t("paragraph1")}
         </p>
-        <p className="mt-2 text-gray-700 text-sm md:text-lg">
+        <p className="mt-2 text-gray-500 text-sm md:text-lg">
           {t("paragraph2")}
         </p>
       </div>

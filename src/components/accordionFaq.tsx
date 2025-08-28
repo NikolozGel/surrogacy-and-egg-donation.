@@ -56,11 +56,11 @@ export default function AccordionFaq() {
       <main className="flex-1 px-4 py-8 flex flex-col items-center">
         {/* Header section */}
         <section className="max-w-4xl text-center mb-10">
-          <h2 className="text-2xl text-gray-700 md:text-3xl font-bold mb-4">
+          <h2 className="text-2xl text-gray-700 lg:text-4xl font-bold mb-4">
             {t("title")}
             {t("title-highlight")}
           </h2>
-          <p className="text-gray-600 text-sm md:text-base">
+          <p className="text-gray-600 text-sm md:text-base lg:text-xl">
             {t("description")}
           </p>
         </section>
@@ -78,7 +78,7 @@ export default function AccordionFaq() {
                 }`}
               >
                 <div className="flex justify-between items-start gap-2">
-                  <h3 className="font-bold text-sm sm:text-base text-gray-700 lg:text-lg mr-3">
+                  <h3 className="font-bold text-sm sm:text-base text-gray-700 lg:text-xl mr-3">
                     {item.question}
                   </h3>
                   <div className="flex-shrink-0">
@@ -99,7 +99,9 @@ export default function AccordionFaq() {
                     selected === item.id ? "max-h-96" : "max-h-0"
                   }`}
                 >
-                  <div className="pb-5 text-gray-700">{item.answer}</div>
+                  <div className="pb-5 text-gray-00 lg:text-lg">
+                    {item.answer}
+                  </div>
                 </div>
               </div>
             ))}
@@ -108,16 +110,18 @@ export default function AccordionFaq() {
           {/* CTA Box */}
           <div className="bg-[#323232] lg:h-[300px] text-white rounded-2xl p-6 flex flex-col items-center justify-center text-center w-full lg:max-w-sm mx-auto">
             <Image src={faqImage} width={100} height={100} alt="faqImage" />
-            <h3 className="text-lg font-semibold mt-4">{t("fAQTitle")}</h3>
+            <h3 className="text-lg lg:text-xl font-semibold mt-4">
+              {t("fAQTitle")}
+            </h3>
             <div className="flex gap-4 mt-6 flex-col sm:flex-row mb-4">
               <button
-                className=" bg-[#00AE8A] hover:opacity-65 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer"
+                className=" bg-[#00AE8A] hover:opacity-65 lg:text-xl text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer"
                 onClick={toggleModal}
               >
                 {t("FAQContactBtn")}
               </button>
               <button
-                className="bg-[#00AE8A] hover:opacity-65 text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer"
+                className="bg-[#00AE8A] hover:opacity-65 lg:text-xl text-white py-2 px-6 rounded-lg w-full sm:w-auto cursor-pointer"
                 onClick={handleClick}
               >
                 {t("FAQPageBtn")}

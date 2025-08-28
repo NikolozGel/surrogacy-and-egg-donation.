@@ -16,12 +16,10 @@ export const metadata: Metadata = {
     default: "IVFertilityGeorgia",
     template: "%s | IVFertilityGeorgia",
   },
-  description:
-    "Helping you become a parent with compassion, care, and science.",
+  description: "ivfertility | in vitro fertilization center in georgia",
   openGraph: {
-    title: "IVFertilityGeorgia",
-    description:
-      "Helping you become a parent with compassion, care, and science.",
+    title: "helping families grow",
+    description: "infertility treatment",
     url: "https://ivfertilitygeorgia.com",
     siteName: "IVFertilityGeorgia",
     images: [
