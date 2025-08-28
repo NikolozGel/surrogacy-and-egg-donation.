@@ -7,8 +7,9 @@ export default function HeroImage() {
         alt="clinicPhoto"
         fill
         quality={100}
-        priority
         className="object-cover"
+        sizes="100vw"
+        priority
       />
     </div>
   );

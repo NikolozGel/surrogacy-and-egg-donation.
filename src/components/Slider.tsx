@@ -41,7 +41,7 @@ export default function Slider() {
               quality={100}
               className="object-cover"
               sizes="100vw"
-              priority={index === 0}
+              priority
             />
           </div>
         ))}

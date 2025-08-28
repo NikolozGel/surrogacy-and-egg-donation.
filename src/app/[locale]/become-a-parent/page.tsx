@@ -10,11 +10,12 @@ export default function BecomeAParentPage() {
         <div className="absolute inset-0">
           <Image
             src={HappyFamily}
-            fill
             alt="Happy family after surrogacy"
-            quality={90}
-            sizes="100vw"
+            fill
+            quality={100}
             className="object-cover"
+            sizes="100vw"
+            priority
           />
         </div>
         <div className="absolute top-52 md:top-50 lg:top-20 inset-0 flex items-center justify-center lg:justify-end px-5">

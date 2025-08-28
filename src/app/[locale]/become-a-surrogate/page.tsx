@@ -15,6 +15,7 @@ export default function BecomeASurrogatePage() {
             quality={90}
             sizes="100vw"
             className="object-cover"
+            priority
           />
         </div>
         <div className="absolute top-52 md:top-50 lg:top-20 inset-0 flex items-center justify-center lg:justify-end px-5">

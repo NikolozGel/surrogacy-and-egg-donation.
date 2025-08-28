@@ -87,8 +87,7 @@ export default function Page() {
           quality={100}
           className="object-cover"
           sizes="100vw"
-          priority={true}
-          unoptimized
+          priority
         />
       </div>
       <FaqIntro />

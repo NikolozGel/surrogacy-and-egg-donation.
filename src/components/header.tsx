@@ -30,7 +30,12 @@ export default function Header() {
         <div className="flex items-center justify-between lg:justify-evenly px-5">
           {/* Logo */}
           <Link href="/" onClick={handleCloseMenu}>
-            <Image src={logoImage} alt="logoImage" width={110} height={110} />
+            <Image
+              src={logoImage}
+              alt="logoImage"
+              className="w-[130px]"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}
