@@ -56,6 +56,24 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={dmSans.className}>
+        <head>
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-N53P66VS"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+        </head>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N53P66VS"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <NextIntlClientProvider>
           <Header />
           {children}

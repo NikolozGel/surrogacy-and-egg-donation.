@@ -45,6 +45,7 @@ export default function ModalRegistrationForm() {
 
     try {
       await axios.post("/api/contact", data);
+      await axios.post("/api/nodemailer", data);
       setSuccessMessage("Thank you! We will contact you as soon as possible.");
       reset();
     } catch (err) {

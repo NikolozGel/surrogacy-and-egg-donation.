@@ -12,14 +12,6 @@ const schema = yup.object().shape({
     .string()
     .required("Email is required")
     .email("Invalid email format"),
-  // gender: yup.string().required("Gender is required"),
-  // birth: yup
-  //   .date()
-  //   .transform((value, originalValue) => {
-  //     return originalValue ? new Date(originalValue) : null;
-  //   })
-  //   .typeError("Invalid date")
-  //   .required("Date of Birth is required"),
   country: yup.string().required("Country is required"),
   phone: yup
     .string()
@@ -50,6 +42,7 @@ export default function ContactForm() {
 
     try {
       await axios.post("/api/contact", data);
+      await axios.post("/api/nodemailer", data);
       setSuccessMessage(true);
       reset();
     } catch (err) {

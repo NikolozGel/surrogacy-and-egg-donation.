@@ -37,12 +37,10 @@ export default function WhatToExpect() {
 
         {/* Right Text Column */}
         <div className="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
-          <h2 className="text-2xl text-gray-700 sm:text-3xl font-bold mb-4">
+          <h2 className=" text-gray-700 text-3xl lg:text-4xl font-bold mb-4">
             {t("expectTitle")} {t("expectHighlight")}
           </h2>
-          <p className="text-gray-700 text-base sm:text-lg mb-6">
-            {t("expectText")}
-          </p>
+          <p className="text-gray-700 lg:text-xl mb-6">{t("expectText")}</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-10">

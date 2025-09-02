@@ -6,7 +6,7 @@ export default function SurrogacyIntroSection() {
     <section className="mt-20 px-4 sm:px-6 lg:px-8">
       <div className="px-15 mx-auto">
         <div className="hidden md:block mb-12">
-          <h3 className="text-3xl  lg:text-4xl text-gray-700 font-bold text-center mb-5">
+          <h3 className="text-3xl lg:text-4xl text-gray-700 font-bold text-center mb-5">
             {t("title")}
           </h3>
           <p className="text-gray-600 max-w-7xl text-center lg:text-xl mx-auto">

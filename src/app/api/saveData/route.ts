@@ -2,9 +2,9 @@ import { MongoClient } from "mongodb";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(request: NextRequest) {
+export async function POST(req: NextRequest) {
   try {
-    const formData = await request.json();
+    const formData = await req.json();
     // console.log("Received data:", formData);
     // console.log("email", formData.email);
     // MongoDB კავშირი

@@ -4,7 +4,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
+  FaXTwitter,
 } from "react-icons/fa6";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { SlLocationPin } from "react-icons/sl";
@@ -21,7 +21,7 @@ export default function Footer() {
           <p className="flex items-center gap-2 hover:text-[#00AE8A] text-sm lg:text-xl">
             <HiOutlineDevicePhoneMobile size={20} />
             <a href="tel:+995511106081" className="hover:underline">
-              +995551106081
+              +995575757535
             </a>
           </p>
           <Link
@@ -87,7 +87,7 @@ export default function Footer() {
               <FaInstagram size={30} />
             </a>
             <a href="#" aria-label="Twitter" className="hover:text-blue-400">
-              <FaTwitter size={30} />
+              <FaXTwitter size={30} />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:text-blue-300">
               <FaLinkedin size={30} />
