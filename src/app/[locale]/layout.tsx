@@ -1,3 +1,4 @@
+// app/[locale]/layout.tsx
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -9,13 +10,10 @@ import { FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
 import type { Metadata } from "next";
-// import Script from "next/script";
+import Script from "next/script"; // ← დააბრუნე ეს import
 
 export const metadata: Metadata = {
-  title: {
-    default: "IVFertilityGeorgia",
-    template: "%s | IVFertilityGeorgia",
-  },
+  title: { default: "IVFertilityGeorgia", template: "%s | IVFertilityGeorgia" },
   description: "ivfertility | in vitro fertilization center in georgia",
   openGraph: {
     title: "helping families grow",
@@ -48,35 +46,46 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string }; // ✅ აღარ არის Promise
+  params: { locale: string };
 }) {
-  const { locale } = await params; // ✅ აღარ ველოდებით await-ს
+  const { locale } = params;
   if (!hasLocale(routing.locales, locale)) notFound();
+
+  const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID; // GTM-N53P66VS
 
   return (
     <html lang={locale}>
       <body className={dmSans.className}>
-        <head>
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-N53P66VS"
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            ></iframe>
-          </noscript>
-        </head>
+        {/* GTM main script */}
+        {GTM_ID && (
+          <Script
+            id="gtm"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];
+                w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${GTM_ID}');`,
+            }}
+          />
+        )}
+
+        {/* GTM noscript fallback – ერთი ჯერ საკმარისია და body-ის დასაწყისში უნდა იდგეს */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-N53P66VS"
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
+
         <NextIntlClientProvider>
           <Header />
           {children}
+
           <Link
             href="https://wa.me/+995511106081"
             target="_blank"
@@ -86,6 +95,7 @@ export default async function LocaleLayout({
               <FaWhatsapp className="h-13 w-13 lg:w-18 lg:h-18" color="white" />
             </div>
           </Link>
+
           <ScrollToTopButton />
           <Footer />
         </NextIntlClientProvider>
