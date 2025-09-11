@@ -4,7 +4,7 @@ export default function SurrogacyIntroSection() {
   const t = useTranslations("introSection");
   return (
     <section className="mt-20 px-4 sm:px-6 lg:px-8">
-      <div className="px-15 mx-auto">
+      <div className="mx-auto">
         <div className="hidden md:block mb-12">
           <h3 className="text-3xl lg:text-4xl text-gray-700 font-bold text-center mb-5">
             {t("title")}

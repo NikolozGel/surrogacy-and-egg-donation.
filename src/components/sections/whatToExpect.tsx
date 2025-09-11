@@ -43,7 +43,7 @@ export default function WhatToExpect() {
           <p className="text-gray-700 lg:text-xl mb-6">{t("expectText")}</p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-10">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 md:gap-8">
             <Link href={`/${locale}/become-a-parent`}>
               <button className="bg-[#00AE8A] hover:opacity-65 text-white font-semibold px-6 py-3 rounded-full text-sm sm:text-base shadow  cursor-pointer">
                 {t("btnParent")}

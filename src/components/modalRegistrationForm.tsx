@@ -4,6 +4,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
 
+// Extend the Window interface to include dataLayer
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, unknown>>;
+  }
+}
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 // ✅ Schema validation with Yup
@@ -46,6 +53,17 @@ export default function ModalRegistrationForm() {
     try {
       await axios.post("/api/contact", data);
       await axios.post("/api/nodemailer", data);
+      // ✅ Conversion event (არა პირადი მონაცემი)
+      if (typeof window !== "undefined") {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "lead_submit",
+          form_type: "modal_registration",
+          locale:
+            typeof navigator !== "undefined" ? navigator.language : undefined,
+        });
+      }
+
       setSuccessMessage("Thank you! We will contact you as soon as possible.");
       reset();
     } catch (err) {
@@ -69,7 +87,9 @@ export default function ModalRegistrationForm() {
       </div>
 
       {successMessage ? (
-        <h3 className="text-center text-lg text-green-600">{successMessage}</h3>
+        <h3 className="text-center text-lg font-semibld text-[#00AE8A]">
+          {successMessage}
+        </h3>
       ) : (
         <form className="flex flex-col gap-5" onSubmit={handleSubmit(onSubmit)}>
           {/* name input */}

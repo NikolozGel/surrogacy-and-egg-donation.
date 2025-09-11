@@ -1,8 +1,17 @@
 "use client";
+import ModalRegistrationForm from "@/components/modalRegistrationForm";
+import { Modal } from "antd";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 export default function PricingPage() {
   const t = useTranslations("prices");
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <section className="w-full bg-gray-50 text-gray-800 px-4 py-16 sm:px-6 lg:px-24 xl:px-32">
@@ -68,10 +77,22 @@ export default function PricingPage() {
         <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
           {t("ctaParagraph")}
         </p>
-        <button className="bg-[#00AE8A] hover:bg-[#009978] text-white px-8 py-3 rounded-xl text-lg font-medium transition">
+        <button
+          className="bg-[#00AE8A] hover:bg-[#009978] text-white px-8 py-3 rounded-xl text-lg font-medium transition cursor-pointer"
+          onClick={toggleModal}
+        >
           {t("ctaButtonLabel")}
         </button>
       </div>
+      <Modal
+        footer={false}
+        width={700}
+        open={isModalOpen}
+        onOk={() => setIsModalOpen(false)}
+        onCancel={() => setIsModalOpen(false)}
+      >
+        <ModalRegistrationForm />
+      </Modal>
     </section>
   );
 }
