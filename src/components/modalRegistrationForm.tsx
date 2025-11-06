@@ -19,6 +19,7 @@ export default function ModalRegistrationForm() {
   async function sendFormData(data: IFormData) {
     // console.log(data);
     await axios.post("/api/submitForm", data);
+    await axios.post("/api/nodemailer", data);
   }
 
   const { mutate } = useMutation({
