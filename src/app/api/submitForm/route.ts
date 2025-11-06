@@ -52,7 +52,7 @@ async function sendEmails(data: IData) {
     from: `${data.name} <${data.email}>`,
     to: "nikolozgelenidze9@gmail.com",
     subject: `Message from ${data.email}`,
-    text: `Text: ${data.text}\nCountry: ${data.country}\nPhone: ${data.phone}`,
+    text: `Name: ${data.name}\n Text: ${data.text}\nCountry: ${data.country}\nPhone: ${data.phone}`,
   };
 
   const mailForUser = {
