@@ -49,14 +49,16 @@ const dmSans = Titillium_Web({
   style: ["normal"],
 });
 
+type Params = Promise<{ locale: string }>;
+
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: ReactNode;
-  params: { locale: string };
+  params: Params;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
