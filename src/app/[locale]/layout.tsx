@@ -11,10 +11,17 @@ import Link from "next/link";
 import ScrollToTopButton from "@/components/scrollUpButton";
 import type { Metadata } from "next";
 import Script from "next/script"; // ← დააბრუნე ეს import
+import { QueryClient } from "@tanstack/react-query";
+import ReactQueryProvider from "@/components/reactqueryprovider";
+
+export const queryClient = new QueryClient();
 
 export const metadata: Metadata = {
   title: { default: "IVFertilityGeorgia", template: "%s | IVFertilityGeorgia" },
   description: "ivfertility | in vitro fertilization center in georgia",
+  icons: {
+    icon: "/assets/logo/browser-tab-logo.png",
+  },
   openGraph: {
     title: "helping families grow",
     description: "infertility treatment",
@@ -32,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://ivfertilitygeorgia.com" },
+  alternates: { canonical: "https://ivfertilitygeorgia.com/en" },
 };
 
 const dmSans = Titillium_Web({
@@ -48,7 +55,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
@@ -70,7 +77,7 @@ export default async function LocaleLayout({
 
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <ReactQueryProvider>{children}</ReactQueryProvider>
 
           <Link
             href="https://wa.me/+995511106081"
