@@ -13,6 +13,7 @@ import type { Metadata } from "next";
 import Script from "next/script"; // ← დააბრუნე ეს import
 import { QueryClient } from "@tanstack/react-query";
 import ReactQueryProvider from "@/components/reactqueryprovider";
+import { ReactNode } from "react";
 
 export const queryClient = new QueryClient();
 
@@ -52,7 +53,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   params: { locale: string };
 }) {
   const { locale } = await params;
