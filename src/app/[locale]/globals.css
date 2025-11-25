@@ -7,23 +7,17 @@ a {
 .custom-carousel .slick-prev,
 .custom-carousel .slick-next {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
   margin-right: 30px;
   margin-left: 30px;
   color: #fff;
 }
 
 .ant-carousel .slick-next::after {
-  margin-left: 15px;
-  margin-top: 18px;
   width: 18px;
   height: 18px;
 }
 
 .ant-carousel .slick-prev::after {
-  margin-left: 22px;
-  margin-top: 18px;
   width: 18px;
   height: 18px;
 }

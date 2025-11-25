@@ -83,7 +83,7 @@ export default async function LocaleLayout({
           <ReactQueryProvider>{children}</ReactQueryProvider>
 
           <Link
-            href="https://wa.me/+995511106081"
+            href="https://wa.me/+995575757535"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export default function IntroSection() {
   const t = useTranslations("aboutPage");
   return (
-    <div className="mb-20 text-center">
+    <div className="mb-20 text-center pt-20">
       <h2 className="font-bold mb-4 text-3xl lg:text-4xl text-gray-700">
         {t("title-3")} {t("highlight")}
       </h2>

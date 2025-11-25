@@ -1,7 +1,7 @@
 import ContactCallToAction from "@/components/contactCallToAction";
 import Accordion from "@/components/contactPage/accordion";
-import Image from "next/image";
-import coverPhoto from "../../../../public/assets/images/servicePage-bg.png";
+// import Image from "next/image";
+// import coverPhoto from "../../../../public/assets/images/servicePage-bg.png";
 import { useTranslations } from "next-intl";
 import FaqIntro from "@/components/faqIntro";
 
@@ -79,7 +79,7 @@ export default function Page() {
 
   return (
     <div className="bg-gray-50">
-      <div className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh] overflow-hidden">
+      {/* <div className="relative w-full h-[37vh] sm:h-[60vh] lg:h-[73vh] overflow-hidden">
         <Image
           src={coverPhoto}
           alt="coverImage"
@@ -89,7 +89,7 @@ export default function Page() {
           sizes="100vw"
           priority
         />
-      </div>
+      </div> */}
       <FaqIntro />
       <Accordion data={data} />
 

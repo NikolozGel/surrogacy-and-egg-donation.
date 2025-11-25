@@ -57,7 +57,7 @@ export default function ModalRegistrationForm() {
       </div>
       {showSuccess ? (
         <p className="text-[#00AE8A] text-lg p-4 font-semibold">
-          Sent successfully!
+          Thank&apos;s we&apos;ll contact you as soon as possible
         </p>
       ) : (
         <form className="flex flex-col gap-5" onSubmit={onSubmit}>
